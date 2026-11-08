@@ -1,5 +1,15 @@
 # Changelog
 
+## Sweet TTS 3.4 - 2026-11-08
+
+- What's New cleaned up: the original app's leftover entries (old 2.0 notes
+  in all languages) are gone; the dialog now lists only Sweet TTS's own
+  changes, in all 5 languages.
+- Fixed APK packaging: native libraries are now page-aligned as Android 10+
+  requires (zipalign -p). The 3.2/3.3 assets that failed to install with
+  "package appears to be invalid" were replaced with corrected builds.
+- Same signing key; installs as an in-place update over 3.3.
+
 ## Sweet TTS 3.3 - 2026-11-08
 
 - Automatic update check: when Sweet TTS opens its settings it checks for a

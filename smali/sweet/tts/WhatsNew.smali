@@ -150,44 +150,44 @@
     .line 38
     new-array v2, v1, [Ljava/lang/String;
 
-    const-string v9, "Automatic update check: Sweet TTS tells you when a new version is ready and opens the download page for you."
+    const-string v9, "What\'s New is cleaned up: only Sweet TTS\'s own notes appear here now."
 
     aput-object v9, v2, v3
 
     .line 39
-    const-string v9, "Fixed: speech suddenly going silent."
+    const-string v9, "Fixed installation on Android 10 and 11: the update now installs in place."
 
     aput-object v9, v2, v4
 
     .line 40
-    const-string v9, "Fixed: frequent app crashes."
+    const-string v9, "Automatic update check: Sweet TTS tells you when a new version is ready, with a Download button."
 
     aput-object v9, v2, v5
 
     .line 41
-    const-string v9, "Fixed: repeated \"comma\" being read out."
+    const-string v9, "Phone speaker for speech: keep speech on the phone speaker while music plays on Bluetooth (in Other Settings)."
 
     aput-object v9, v2, v6
 
     .line 42
-    const-string v9, "Runs reliably in the background."
+    const-string v9, "Fixed the crash that switched the app off on Android 10 and 11."
 
     aput-object v9, v2, v7
 
     .line 43
-    const-string v9, "Clearer symbols and English words (1.5\u00d7 is read as 1.5 times)."
+    const-string v9, "New name everywhere: Sweet TTS."
 
     aput-object v9, v2, v0
 
     .line 44
-    const-string v9, "Lower battery consumption."
+    const-string v9, "Updates and source code on GitHub: github.com/swarup-developer/sweet-tts/releases"
 
     const/4 v14, 0x6
 
     aput-object v9, v2, v14
 
     .line 45
-    const-string v9, "Choice of punctuation level, and help in 4 languages."
+    const-string v9, "Updates install in place: your settings are kept."
 
     const/4 v15, 0x7
 
@@ -204,7 +204,7 @@
     const-string v13, "OK"
 
     .line 35
-    const-string v9, "What\'s new in Sweet TTS 3.3"
+    const-string v9, "What\'s new in Sweet TTS 3.4"
 
     const-string v10, "Help language"
 
@@ -218,42 +218,42 @@
     .line 53
     new-array v2, v1, [Ljava/lang/String;
 
-    const-string v8, "\u0905\u092a\u0921\u0947\u091f \u0914\u0930 \u0938\u094b\u0930\u094d\u0938 \u0915\u094b\u0921 GitHub \u092a\u0930: github.com/swarup-developer/sweet-tts/releases"
+    const-string v8, "What\'s New \u0938\u093e\u092b\u093c \u0939\u0941\u0906: \u0905\u092c \u092f\u0939\u093e\u0901 \u0938\u093f\u0930\u094d\u092b\u093c Sweet TTS \u0915\u0947 \u0905\u092a\u0928\u0947 \u0928\u094b\u091f \u0926\u093f\u0916\u0924\u0947 \u0939\u0948\u0902\u0964"
 
     aput-object v8, v2, v3
 
     .line 54
-    const-string v8, "\u0920\u0940\u0915 \u0939\u0941\u0906: \u0906\u0935\u093e\u091c\u093c \u0915\u093e \u0905\u091a\u093e\u0928\u0915 \u092c\u0902\u0926 \u0939\u094b \u091c\u093e\u0928\u093e\u0964"
+    const-string v8, "Android 10 \u0914\u0930 11 \u092a\u0930 \u0907\u0902\u0938\u094d\u091f\u0949\u0932 \u0920\u0940\u0915 \u0939\u0941\u0906: \u0905\u092a\u0921\u0947\u091f \u0938\u0940\u0927\u0947 \u0907\u0902\u0938\u094d\u091f\u0949\u0932 \u0939\u094b \u091c\u093e\u0924\u093e \u0939\u0948\u0964"
 
     aput-object v8, v2, v4
 
     .line 55
-    const-string v8, "\u0920\u0940\u0915 \u0939\u0941\u0906: \u092c\u093e\u0930-\u092c\u093e\u0930 \u0910\u092a \u0915\u093e crash \u0939\u094b\u0928\u093e\u0964"
+    const-string v8, "\u0905\u092a\u0921\u0947\u091f \u0915\u0940 \u0905\u092a\u0928\u0947-\u0906\u092a \u091c\u093e\u0901\u091a: \u0928\u092f\u093e \u0935\u0930\u094d\u091c\u093c\u0928 \u0906\u0924\u0947 \u0939\u0940 Sweet TTS \u092c\u0924\u093e \u0926\u0947\u0924\u093e \u0939\u0948, Download \u092c\u091f\u0928 \u0915\u0947 \u0938\u093e\u0925\u0964"
 
     aput-object v8, v2, v5
 
     .line 56
-    const-string v8, "\u0920\u0940\u0915 \u0939\u0941\u0906: \u092c\u093e\u0930-\u092c\u093e\u0930 \"comma\" \u092c\u094b\u0932\u0928\u093e\u0964"
+    const-string v8, "\u092b\u093c\u094b\u0928 \u0938\u094d\u092a\u0940\u0915\u0930 \u092a\u0930 \u0906\u0935\u093e\u091c\u093c: \u092c\u094d\u0932\u0942\u091f\u0942\u0925 \u092a\u0930 \u0938\u0902\u0917\u0940\u0924 \u091a\u0932\u0924\u0947 \u0938\u092e\u092f \u0906\u0935\u093e\u091c\u093c \u092b\u093c\u094b\u0928 \u0938\u094d\u092a\u0940\u0915\u0930 \u092a\u0930 \u0930\u0939\u0947 (Other Settings \u092e\u0947\u0902)\u0964"
 
     aput-object v8, v2, v6
 
     .line 57
-    const-string v8, "\u092c\u0948\u0915\u0917\u094d\u0930\u093e\u0909\u0902\u0921 \u092e\u0947\u0902 \u092d\u0930\u094b\u0938\u0947 \u0938\u0947 \u091a\u0932\u0924\u093e \u0930\u0939\u0924\u093e \u0939\u0948\u0964"
+    const-string v8, "Android 10 \u0914\u0930 11 \u092a\u0930 \u0910\u092a \u092c\u0902\u0926 \u0939\u094b \u091c\u093e\u0928\u0947 \u0935\u093e\u0932\u0940 crash \u0920\u0940\u0915 \u0939\u0941\u0908\u0964"
 
     aput-object v8, v2, v7
 
     .line 58
-    const-string v8, "\u091a\u093f\u0939\u094d\u0928 \u0914\u0930 \u0905\u0902\u0917\u094d\u0930\u0947\u091c\u093c\u0940 \u0936\u092c\u094d\u0926 \u0938\u093e\u092b\u093c \u092a\u0922\u093c\u0947 \u091c\u093e\u0924\u0947 \u0939\u0948\u0902 (1.5\u00d7 \u0915\u094b 1.5 times \u092a\u0922\u093c\u093e \u091c\u093e\u0924\u093e \u0939\u0948)\u0964"
+    const-string v8, "\u0939\u0930 \u091c\u0917\u0939 \u0928\u092f\u093e \u0928\u093e\u092e: Sweet TTS\u0964"
 
     aput-object v8, v2, v0
 
     .line 59
-    const-string v8, "\u092c\u0948\u091f\u0930\u0940 \u0915\u0940 \u0916\u092a\u0924 \u0915\u092e\u0964"
+    const-string v8, "\u0905\u092a\u0921\u0947\u091f \u0914\u0930 \u0938\u094b\u0930\u094d\u0938 \u0915\u094b\u0921 GitHub \u092a\u0930: github.com/swarup-developer/sweet-tts/releases"
 
     aput-object v8, v2, v14
 
     .line 60
-    const-string v8, "\u092a\u0902\u0915\u094d\u091a\u0941\u090f\u0936\u0928 \u0932\u0947\u0935\u0932 \u0915\u093e \u091a\u0941\u0928\u093e\u0935, \u0914\u0930 4 \u092d\u093e\u0937\u093e\u0913\u0902 \u092e\u0947\u0902 \u092e\u0926\u0926\u0964"
+    const-string v8, "\u0905\u092a\u0921\u0947\u091f \u0910\u0938\u0947 \u0939\u0940 \u0907\u0902\u0938\u094d\u091f\u0949\u0932 \u0939\u094b\u0924\u093e \u0939\u0948: \u0906\u092a\u0915\u0940 \u0938\u0947\u091f\u093f\u0902\u0917 \u092c\u0928\u0940 \u0930\u0939\u0924\u0940 \u0939\u0948\u0964"
 
     aput-object v8, v2, v15
 
@@ -268,7 +268,7 @@
     const-string v21, "\u0920\u0940\u0915 \u0939\u0948"
 
     .line 50
-    const-string v17, "Sweet TTS 3.3 \u092e\u0947\u0902 \u0928\u092f\u093e \u0915\u094d\u092f\u093e \u0939\u0948"
+    const-string v17, "Sweet TTS 3.4 \u092e\u0947\u0902 \u0928\u092f\u093e \u0915\u094d\u092f\u093e \u0939\u0948"
 
     const-string v18, "\u092e\u0926\u0926 \u0915\u0940 \u092d\u093e\u0937\u093e (Help language)"
 
@@ -282,42 +282,42 @@
     .line 68
     new-array v2, v1, [Ljava/lang/String;
 
-    const-string v9, "\u0986\u09aa\u09a1\u09c7\u099f \u0993 \u09b8\u09cb\u09b0\u09cd\u09b8 \u0995\u09cb\u09a1 GitHub-\u098f: github.com/swarup-developer/sweet-tts/releases"
+    const-string v9, "What\'s New \u09aa\u09b0\u09bf\u09b7\u09cd\u0995\u09be\u09b0: \u098f\u0996\u09a8 \u098f\u0996\u09be\u09a8\u09c7 \u09b6\u09c1\u09a7\u09c1 Sweet TTS-\u098f\u09b0 \u09a8\u09bf\u099c\u09c7\u09b0 \u09a8\u09cb\u099f \u09a6\u09c7\u0996\u09be \u09af\u09be\u09af\u09bc\u0964"
 
     aput-object v9, v2, v3
 
     .line 69
-    const-string v9, "\u09a0\u09bf\u0995 \u09b9\u09af\u09bc\u09c7\u099b\u09c7: \u09b9\u09a0\u09be\u09ce \u0995\u09a5\u09be \u09ac\u09a8\u09cd\u09a7 \u09b9\u09af\u09bc\u09c7 \u09af\u09be\u0993\u09af\u09bc\u09be\u0964"
+    const-string v9, "Android 10 \u0993 11-\u098f \u0987\u09a8\u09b8\u09cd\u099f\u09b2 \u09a0\u09bf\u0995 \u09b9\u09b2\u09cb: \u0986\u09aa\u09a1\u09c7\u099f \u09b8\u09b0\u09be\u09b8\u09b0\u09bf \u0987\u09a8\u09b8\u09cd\u099f\u09b2 \u09b9\u09af\u09bc\u0964"
 
     aput-object v9, v2, v4
 
     .line 70
-    const-string v9, "\u09a0\u09bf\u0995 \u09b9\u09af\u09bc\u09c7\u099b\u09c7: \u09ac\u09be\u09b0\u09ac\u09be\u09b0 \u0985\u09cd\u09af\u09be\u09aa crash \u09b9\u0993\u09af\u09bc\u09be\u0964"
+    const-string v9, "\u09b8\u09cd\u09ac\u09af\u09bc\u0982\u0995\u09cd\u09b0\u09bf\u09af\u09bc \u0986\u09aa\u09a1\u09c7\u099f \u09af\u09be\u099a\u09be\u0987: \u09a8\u09a4\u09c1\u09a8 \u09ad\u09be\u09b0\u09cd\u09b8\u09a8 \u098f\u09b2\u09c7\u0987 Sweet TTS \u099c\u09be\u09a8\u09bf\u09af\u09bc\u09c7 \u09a6\u09c7\u09af\u09bc, Download \u09ac\u09cb\u09a4\u09be\u09ae \u09b8\u09b9\u0964"
 
     aput-object v9, v2, v5
 
     .line 71
-    const-string v9, "\u09a0\u09bf\u0995 \u09b9\u09af\u09bc\u09c7\u099b\u09c7: \u09ac\u09be\u09b0\u09ac\u09be\u09b0 \"comma\" \u09ac\u09b2\u09be\u0964"
+    const-string v9, "\u09ab\u09cb\u09a8 \u09b8\u09cd\u09aa\u09bf\u0995\u09be\u09b0\u09c7 \u09ad\u09af\u09bc\u09c7\u09b8: \u09ac\u09cd\u09b2\u09c1\u099f\u09c1\u09a5\u09c7 \u0997\u09be\u09a8 \u099a\u09b2\u09b2\u09c7\u0993 \u0995\u09a5\u09be \u09ab\u09cb\u09a8 \u09b8\u09cd\u09aa\u09bf\u0995\u09be\u09b0\u09c7\u0987 \u09a5\u09be\u0995\u09ac\u09c7 (Other Settings-\u098f)\u0964"
 
     aput-object v9, v2, v6
 
     .line 72
-    const-string v9, "\u09ac\u09cd\u09af\u09be\u0995\u0997\u09cd\u09b0\u09be\u0989\u09a8\u09cd\u09a1\u09c7 \u09a8\u09bf\u09b0\u09cd\u09ad\u09b0\u09af\u09cb\u0997\u09cd\u09af\u09ad\u09be\u09ac\u09c7 \u099a\u09be\u09b2\u09c1 \u09a5\u09be\u0995\u09c7\u0964"
+    const-string v9, "Android 10 \u0993 11-\u098f \u0985\u09cd\u09af\u09be\u09aa \u09ac\u09a8\u09cd\u09a7 \u0995\u09b0\u09c7 \u09a6\u09c7\u0993\u09af\u09bc\u09be crash \u09a0\u09bf\u0995 \u09b9\u09b2\u09cb\u0964"
 
     aput-object v9, v2, v7
 
     .line 73
-    const-string v9, "\u099a\u09bf\u09b9\u09cd\u09a8 \u0993 \u0987\u0982\u09b0\u09c7\u099c\u09bf \u09b6\u09ac\u09cd\u09a6 \u09aa\u09b0\u09bf\u09b7\u09cd\u0995\u09be\u09b0 \u09aa\u09a1\u09bc\u09be \u09b9\u09af\u09bc (1.5\u00d7 \u09aa\u09a1\u09bc\u09be \u09b9\u09af\u09bc 1.5 times)\u0964"
+    const-string v9, "\u09b8\u09ac \u099c\u09be\u09af\u09bc\u0997\u09be\u09af\u09bc \u09a8\u09a4\u09c1\u09a8 \u09a8\u09be\u09ae: Sweet TTS\u0964"
 
     aput-object v9, v2, v0
 
     .line 74
-    const-string v9, "\u09ac\u09cd\u09af\u09be\u099f\u09be\u09b0\u09bf\u09b0 \u0996\u09b0\u099a \u0995\u09ae\u0964"
+    const-string v9, "\u0986\u09aa\u09a1\u09c7\u099f \u0986\u09b0 \u09b8\u09cb\u09b0\u09cd\u09b8 \u0995\u09cb\u09a1 GitHub-\u098f: github.com/swarup-developer/sweet-tts/releases"
 
     aput-object v9, v2, v14
 
     .line 75
-    const-string v9, "\u09aa\u09be\u0982\u099a\u09c1\u09af\u09bc\u09c7\u09b6\u09a8 \u09b2\u09c7\u09ad\u09c7\u09b2 \u09ac\u09c7\u099b\u09c7 \u09a8\u09c7\u0993\u09af\u09bc\u09be \u09af\u09be\u09af\u09bc, \u0986\u09b0 4\u099f\u09bf \u09ad\u09be\u09b7\u09be\u09af\u09bc \u09b8\u09b9\u09be\u09af\u09bc\u09a4\u09be\u0964"
+    const-string v9, "\u0986\u09aa\u09a1\u09c7\u099f \u098f\u09ae\u09a8\u09bf\u09a4\u09c7\u0987 \u0987\u09a8\u09b8\u09cd\u099f\u09b2 \u09b9\u09af\u09bc: \u0986\u09aa\u09a8\u09be\u09b0 \u09b8\u09c7\u099f\u09bf\u0982\u09b8 \u0985\u0995\u09cd\u09b7\u09a4 \u09a5\u09be\u0995\u09c7\u0964"
 
     aput-object v9, v2, v15
 
@@ -332,7 +332,7 @@
     const-string v13, "\u09a0\u09bf\u0995 \u0986\u099b\u09c7"
 
     .line 65
-    const-string v9, "Sweet TTS 3.3-\u09a4\u09c7 \u09a8\u09a4\u09c1\u09a8 \u0995\u09c0"
+    const-string v9, "Sweet TTS 3.4-\u09a4\u09c7 \u09a8\u09a4\u09c1\u09a8 \u0995\u09c0"
 
     const-string v10, "\u09b8\u09b9\u09be\u09af\u09bc\u09a4\u09be\u09b0 \u09ad\u09be\u09b7\u09be (Help language)"
 
@@ -346,42 +346,42 @@
     .line 83
     new-array v2, v1, [Ljava/lang/String;
 
-    const-string v8, "\u0627\u067e\u0688\u06cc\u0679\u0633 \u0627\u0648\u0631 \u0633\u0648\u0631\u0633 \u06a9\u0648\u0688 GitHub \u067e\u0631: github.com/swarup-developer/sweet-tts/releases"
+    const-string v8, "What\'s New \u0635\u0627\u0641 \u06c1\u0648 \u06af\u06cc\u0627: \u0627\u0628 \u06cc\u06c1\u0627\u06ba \u0635\u0631\u0641 Sweet TTS \u06a9\u06d2 \u0627\u067e\u0646\u06d2 \u0646\u0648\u0679 \u0646\u0638\u0631 \u0622\u062a\u06d2 \u06c1\u06cc\u06ba\u06d4"
 
     aput-object v8, v2, v3
 
     .line 84
-    const-string v8, "\u0679\u06be\u06cc\u06a9 \u06c1\u0648\u0627: \u0622\u0648\u0627\u0632 \u06a9\u0627 \u0627\u0686\u0627\u0646\u06a9 \u0628\u0646\u062f \u06c1\u0648 \u062c\u0627\u0646\u0627\u06d4"
+    const-string v8, "Android 10 \u0627\u0648\u0631 11 \u067e\u0631 \u0627\u0646\u0633\u0679\u0627\u0644 \u0679\u06c1\u06cc\u06a9: \u0627\u067e\u0688\u06cc\u0679 \u0628\u0631\u0627\u06c1 \u0631\u0627\u0633\u062a \u0627\u0646\u0633\u0679\u0627\u0644 \u06c1\u0648 \u062c\u0627\u062a\u0627 \u06c1\u06d2\u06d4"
 
     aput-object v8, v2, v4
 
     .line 85
-    const-string v8, "\u0679\u06be\u06cc\u06a9 \u06c1\u0648\u0627: \u0628\u0627\u0631 \u0628\u0627\u0631 \u0627\u06cc\u067e \u06a9\u0627 crash \u06c1\u0648\u0646\u0627\u06d4"
+    const-string v8, "\u0627\u067e\u0688\u06cc\u0679 \u06a9\u06cc \u062e\u0648\u062f\u06a9\u0627\u0631 \u062c\u0627\u0646\u0686: \u0646\u06cc\u0627 \u0648\u0631\u0698\u0646 \u0622\u062a\u06d2 \u06c1\u06cc Sweet TTS \u0628\u062a\u0627 \u062f\u06cc\u062a\u0627 \u06c1\u06d2\u060c Download \u0628\u0679\u0646 \u06a9\u06d2 \u0633\u0627\u062a\u06be\u06d4"
 
     aput-object v8, v2, v5
 
     .line 86
-    const-string v8, "\u0679\u06be\u06cc\u06a9 \u06c1\u0648\u0627: \u0628\u0627\u0631 \u0628\u0627\u0631 \"comma\" \u0628\u0648\u0644\u0646\u0627\u06d4"
+    const-string v8, "\u0641\u0648\u0646 \u0627\u0633\u067e\u06cc\u06a9\u0631 \u067e\u0631 \u0622\u0648\u0627\u0632: \u0628\u0644\u0648\u0679\u0648\u062a\u06be \u067e\u0631 \u0645\u0648\u0633\u06cc\u0642\u06cc \u0686\u0644\u062a\u06d2 \u06c1\u0648\u0626\u06d2 \u0622\u0648\u0627\u0632 \u0641\u0648\u0646 \u0627\u0633\u067e\u06cc\u06a9\u0631 \u067e\u0631 \u0631\u06c1\u06d2 (Other Settings \u0645\u06cc\u06ba)\u06d4"
 
     aput-object v8, v2, v6
 
     .line 87
-    const-string v8, "\u0628\u06cc\u06a9 \u06af\u0631\u0627\u0624\u0646\u0688 \u0645\u06cc\u06ba \u0642\u0627\u0628\u0644\u0650 \u0627\u0639\u062a\u0645\u0627\u062f \u0637\u0631\u06cc\u0642\u06d2 \u0633\u06d2 \u0686\u0644\u062a\u06cc \u0631\u06c1\u062a\u06cc \u06c1\u06d2\u06d4"
+    const-string v8, "Android 10 \u0627\u0648\u0631 11 \u067e\u0631 \u0627\u06cc\u067e \u0628\u0646\u062f \u06a9\u0631 \u062f\u06cc\u0646\u06d2 \u0648\u0627\u0644\u0627 crash \u0679\u06c1\u06cc\u06a9 \u06c1\u0648\u0627\u06d4"
 
     aput-object v8, v2, v7
 
     .line 88
-    const-string v8, "\u0639\u0644\u0627\u0645\u0627\u062a \u0627\u0648\u0631 \u0627\u0646\u06af\u0631\u06cc\u0632\u06cc \u0627\u0644\u0641\u0627\u0638 \u0635\u0627\u0641 \u067e\u0691\u06be\u06d2 \u062c\u0627\u062a\u06d2 \u06c1\u06cc\u06ba (1.5\u00d7 \u06a9\u0648 1.5 times \u067e\u0691\u06be\u0627 \u062c\u0627\u062a\u0627 \u06c1\u06d2)\u06d4"
+    const-string v8, "\u06c1\u0631 \u062c\u06af\u06c1 \u0646\u06cc\u0627 \u0646\u0627\u0645: Sweet TTS\u06d4"
 
     aput-object v8, v2, v0
 
     .line 89
-    const-string v8, "\u0628\u06cc\u0679\u0631\u06cc \u06a9\u0627 \u06a9\u0645 \u062e\u0631\u0686\u06d4"
+    const-string v8, "\u0627\u067e\u0688\u06cc\u0679 \u0627\u0648\u0631 \u0633\u0648\u0631\u0633 \u06a9\u0648\u0688 GitHub \u067e\u0631: github.com/swarup-developer/sweet-tts/releases"
 
     aput-object v8, v2, v14
 
     .line 90
-    const-string v8, "\u067e\u0646\u06a9\u0686\u0648\u0627\u06cc\u0634\u0646 \u0644\u06cc\u0648\u0644 \u06a9\u0627 \u0627\u0646\u062a\u062e\u0627\u0628\u060c \u0627\u0648\u0631 4 \u0632\u0628\u0627\u0646\u0648\u06ba \u0645\u06cc\u06ba \u0645\u062f\u062f\u06d4"
+    const-string v8, "\u0627\u067e\u0688\u06cc\u0679 \u0627\u06cc\u0633\u06d2 \u06c1\u06cc \u0627\u0646\u0633\u0679\u0627\u0644 \u06c1\u0648\u062a\u0627 \u06c1\u06d2: \u0622\u067e \u06a9\u06cc \u0633\u06cc\u0679\u0646\u06af \u0628\u0631\u0642\u0631\u0627\u0631 \u0631\u06c1\u062a\u06cc \u06c1\u06d2\u06d4"
 
     aput-object v8, v2, v15
 
@@ -396,7 +396,7 @@
     const-string v21, "\u0679\u06be\u06cc\u06a9 \u06c1\u06d2"
 
     .line 80
-    const-string v17, "Sweet TTS 3.3 \u0645\u06cc\u06ba \u0646\u06cc\u0627 \u06a9\u06cc\u0627 \u06c1\u06d2"
+    const-string v17, "Sweet TTS 3.4 \u0645\u06cc\u06ba \u0646\u06cc\u0627 \u06a9\u06cc\u0627 \u06c1\u06d2"
 
     const-string v18, "\u0645\u062f\u062f \u06a9\u06cc \u0632\u0628\u0627\u0646 (Help language)"
 
@@ -410,42 +410,42 @@
     .line 98
     new-array v1, v1, [Ljava/lang/String;
 
-    const-string v2, "\u0627\u0644\u062a\u062d\u062f\u064a\u062b\u0627\u062a \u0648\u0627\u0644\u0643\u0648\u062f \u0627\u0644\u0645\u0635\u062f\u0631\u064a \u0639\u0644\u0649 GitHub: github.com/swarup-developer/sweet-tts/releases"
+    const-string v2, "\u062a\u0645 \u062a\u0646\u0638\u064a\u0641 What\'s New: \u0644\u0627 \u062a\u0638\u0647\u0631 \u0647\u0646\u0627 \u0627\u0644\u0622\u0646 \u0633\u0648\u0649 \u0645\u0644\u0627\u062d\u0638\u0627\u062a Sweet TTS \u0627\u0644\u062e\u0627\u0635\u0629."
 
     aput-object v2, v1, v3
 
     .line 99
-    const-string v2, "\u062a\u0645 \u0627\u0644\u0625\u0635\u0644\u0627\u062d: \u062a\u0648\u0642\u0641 \u0627\u0644\u0635\u0648\u062a \u0627\u0644\u0645\u0641\u0627\u062c\u0626."
+    const-string v2, "\u062a\u0645 \u0625\u0635\u0644\u0627\u062d \u0627\u0644\u062a\u062b\u0628\u064a\u062a \u0639\u0644\u0649 Android 10 \u064811: \u064a\u062a\u0645 \u062a\u062b\u0628\u064a\u062a \u0627\u0644\u062a\u062d\u062f\u064a\u062b \u0645\u0628\u0627\u0634\u0631\u0629."
 
     aput-object v2, v1, v4
 
     .line 100
-    const-string v2, "\u062a\u0645 \u0627\u0644\u0625\u0635\u0644\u0627\u062d: \u0627\u0644\u0623\u0639\u0637\u0627\u0644 \u0627\u0644\u0645\u062a\u0643\u0631\u0631\u0629 \u0644\u0644\u062a\u0637\u0628\u064a\u0642."
+    const-string v2, "\u0641\u062d\u0635 \u062a\u0644\u0642\u0627\u0626\u064a \u0644\u0644\u062a\u062d\u062f\u064a\u062b\u0627\u062a: \u064a\u062e\u0628\u0631\u0643 Sweet TTS \u0639\u0646\u062f \u062a\u0648\u0641\u0631 \u0625\u0635\u062f\u0627\u0631 \u062c\u062f\u064a\u062f \u0645\u0639 \u0632\u0631 Download."
 
     aput-object v2, v1, v5
 
     .line 101
-    const-string v2, "\u062a\u0645 \u0627\u0644\u0625\u0635\u0644\u0627\u062d: \u062a\u0643\u0631\u0627\u0631 \u0646\u0637\u0642 \"comma\"."
+    const-string v2, "\u0627\u0644\u0635\u0648\u062a \u0639\u0644\u0649 \u0633\u0645\u0627\u0639\u0629 \u0627\u0644\u0647\u0627\u062a\u0641: \u064a\u0628\u0642\u0649 \u0627\u0644\u0643\u0644\u0627\u0645 \u0639\u0644\u0649 \u0633\u0645\u0627\u0639\u0629 \u0627\u0644\u0647\u0627\u062a\u0641 \u0628\u064a\u0646\u0645\u0627 \u062a\u0639\u0645\u0644 \u0627\u0644\u0645\u0648\u0633\u064a\u0642\u0649 \u0639\u0644\u0649 Bluetooth (\u0641\u064a Other Settings)."
 
     aput-object v2, v1, v6
 
     .line 102
-    const-string v2, "\u064a\u0639\u0645\u0644 \u0628\u062b\u0628\u0627\u062a \u0641\u064a \u0627\u0644\u062e\u0644\u0641\u064a\u0629."
+    const-string v2, "\u062a\u0645 \u0625\u0635\u0644\u0627\u062d \u0627\u0644\u0639\u0637\u0644 \u0627\u0644\u0630\u064a \u0643\u0627\u0646 \u064a\u0648\u0642\u0641 \u0627\u0644\u062a\u0637\u0628\u064a\u0642 \u0639\u0644\u0649 Android 10 \u064811."
 
     aput-object v2, v1, v7
 
     .line 103
-    const-string v2, "\u0642\u0631\u0627\u0621\u0629 \u0623\u0648\u0636\u062d \u0644\u0644\u0631\u0645\u0648\u0632 \u0648\u0627\u0644\u0643\u0644\u0645\u0627\u062a \u0627\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629 (\u064a\u064f\u0642\u0631\u0623 1.5\u00d7 \u0639\u0644\u0649 \u0623\u0646\u0647 1.5 times)."
+    const-string v2, "\u0627\u0644\u0627\u0633\u0645 \u0627\u0644\u062c\u062f\u064a\u062f \u0641\u064a \u0643\u0644 \u0645\u0643\u0627\u0646: Sweet TTS."
 
     aput-object v2, v1, v0
 
     .line 104
-    const-string v2, "\u0627\u0633\u062a\u0647\u0644\u0627\u0643 \u0623\u0642\u0644 \u0644\u0644\u0628\u0637\u0627\u0631\u064a\u0629."
+    const-string v2, "\u0627\u0644\u062a\u062d\u062f\u064a\u062b\u0627\u062a \u0648\u0627\u0644\u0643\u0648\u062f \u0627\u0644\u0645\u0635\u062f\u0631\u064a \u0639\u0644\u0649 GitHub: github.com/swarup-developer/sweet-tts/releases"
 
     aput-object v2, v1, v14
 
     .line 105
-    const-string v2, "\u0627\u062e\u062a\u064a\u0627\u0631 \u0645\u0633\u062a\u0648\u0649 \u0639\u0644\u0627\u0645\u0627\u062a \u0627\u0644\u062a\u0631\u0642\u064a\u0645\u060c \u0648\u0645\u0633\u0627\u0639\u062f\u0629 \u0628\u0623\u0631\u0628\u0639 \u0644\u063a\u0627\u062a."
+    const-string v2, "\u062a\u064f\u062b\u0628\u0651\u062a \u0627\u0644\u062a\u062d\u062f\u064a\u062b\u0627\u062a \u0641\u064a \u0645\u0643\u0627\u0646\u0647\u0627: \u062a\u0628\u0642\u0649 \u0625\u0639\u062f\u0627\u062f\u0627\u062a\u0643 \u0643\u0645\u0627 \u0647\u064a."
 
     aput-object v2, v1, v15
 
@@ -460,7 +460,7 @@
     const-string v13, "\u062d\u0633\u0646\u0627\u064b"
 
     .line 95
-    const-string v9, "\u0627\u0644\u062c\u062f\u064a\u062f \u0641\u064a Sweet TTS 3.3"
+    const-string v9, "\u0627\u0644\u062c\u062f\u064a\u062f \u0641\u064a Sweet TTS 3.4"
 
     const-string v10, "\u0644\u063a\u0629 \u0627\u0644\u0645\u0633\u0627\u0639\u062f\u0629 (Help language)"
 
@@ -525,7 +525,7 @@
 
     invoke-direct/range {v16 .. v21}, Lsweet/tts/WhatsNew$Text;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V
 
-    sput-object v16, Lsweet/tts/WhatsNew;->EN2:Lsweet/tts/WhatsNew$Text;
+    sput-object v16, Lsweet/tts/WhatsNew;->EN:Lsweet/tts/WhatsNew$Text;
 
     .line 126
     new-instance v8, Lsweet/tts/WhatsNew$Text;
@@ -584,7 +584,7 @@
 
     invoke-direct/range {v8 .. v13}, Lsweet/tts/WhatsNew$Text;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V
 
-    sput-object v8, Lsweet/tts/WhatsNew;->HI2:Lsweet/tts/WhatsNew$Text;
+    sput-object v8, Lsweet/tts/WhatsNew;->HI:Lsweet/tts/WhatsNew$Text;
 
     .line 140
     new-instance v16, Lsweet/tts/WhatsNew$Text;
@@ -643,7 +643,7 @@
 
     invoke-direct/range {v16 .. v21}, Lsweet/tts/WhatsNew$Text;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V
 
-    sput-object v16, Lsweet/tts/WhatsNew;->BN2:Lsweet/tts/WhatsNew$Text;
+    sput-object v16, Lsweet/tts/WhatsNew;->BN:Lsweet/tts/WhatsNew$Text;
 
     .line 154
     new-instance v8, Lsweet/tts/WhatsNew$Text;
@@ -702,7 +702,7 @@
 
     invoke-direct/range {v8 .. v13}, Lsweet/tts/WhatsNew$Text;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V
 
-    sput-object v8, Lsweet/tts/WhatsNew;->UR2:Lsweet/tts/WhatsNew$Text;
+    sput-object v8, Lsweet/tts/WhatsNew;->UR:Lsweet/tts/WhatsNew$Text;
 
     .line 168
     new-instance v16, Lsweet/tts/WhatsNew$Text;
@@ -761,7 +761,7 @@
 
     invoke-direct/range {v16 .. v21}, Lsweet/tts/WhatsNew$Text;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V
 
-    sput-object v16, Lsweet/tts/WhatsNew;->AR2:Lsweet/tts/WhatsNew$Text;
+    sput-object v16, Lsweet/tts/WhatsNew;->AR:Lsweet/tts/WhatsNew$Text;
 
     return-void
 .end method
@@ -906,7 +906,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    goto :cond_0
 
     invoke-direct {p0, p1}, Lsweet/tts/WhatsNew;->plusPoint(Ljava/lang/String;)Ljava/lang/String;
 
@@ -1223,7 +1223,7 @@
     goto :goto_0
 
     :cond_1
-    sget-object p0, Lsweet/tts/WhatsNew;->UR2:Lsweet/tts/WhatsNew$Text;
+    sget-object p0, Lsweet/tts/WhatsNew;->UR:Lsweet/tts/WhatsNew$Text;
 
     return-object p0
 
@@ -1237,7 +1237,7 @@
     goto :goto_0
 
     :cond_3
-    sget-object p0, Lsweet/tts/WhatsNew;->HI2:Lsweet/tts/WhatsNew$Text;
+    sget-object p0, Lsweet/tts/WhatsNew;->HI:Lsweet/tts/WhatsNew$Text;
 
     return-object p0
 
@@ -1251,7 +1251,7 @@
     goto :goto_0
 
     :cond_5
-    sget-object p0, Lsweet/tts/WhatsNew;->BN2:Lsweet/tts/WhatsNew$Text;
+    sget-object p0, Lsweet/tts/WhatsNew;->BN:Lsweet/tts/WhatsNew$Text;
 
     return-object p0
 
@@ -1263,12 +1263,12 @@
     if-nez p0, :cond_7
 
     :goto_0
-    sget-object p0, Lsweet/tts/WhatsNew;->EN2:Lsweet/tts/WhatsNew$Text;
+    sget-object p0, Lsweet/tts/WhatsNew;->EN:Lsweet/tts/WhatsNew$Text;
 
     return-object p0
 
     :cond_7
-    sget-object p0, Lsweet/tts/WhatsNew;->AR2:Lsweet/tts/WhatsNew$Text;
+    sget-object p0, Lsweet/tts/WhatsNew;->AR:Lsweet/tts/WhatsNew$Text;
 
     return-object p0
 
