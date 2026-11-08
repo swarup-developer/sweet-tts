@@ -1,5 +1,14 @@
 # Changelog
 
+## Sweet TTS 3.6 - 2026-11-08
+
+- In-app updater: the Download button now downloads the APK inside the app
+  with a progress bar, then opens the Android package installer by itself -
+  no browser step. Adds REQUEST_INSTALL_PACKAGES and uses the existing
+  FileProvider. Falls back to the browser release page if in-app download
+  is unavailable on a build.
+- Same signing key; installs as an in-place update.
+
 ## Sweet TTS 3.5 - 2026-11-08
 
 - Smaller downloads: the release now ships a universal APK plus per-ABI
