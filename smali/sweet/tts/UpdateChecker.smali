@@ -4,7 +4,7 @@
 
 
 # static fields
-.field private static final META_URL:Ljava/lang/String; = "https://raw.githubusercontent.com/swarup-developer/sweet-tts-updates/main/latest.json"
+.field private static final META_URL:Ljava/lang/String; = "https://raw.githubusercontent.com/swarup-developer/sweet-tts-update/main/latest.json"
 
 .field private static final PREFS:Ljava/lang/String; = "aiotts_settings"
 
@@ -70,7 +70,7 @@
     :try_start_2
     new-instance v1, Ljava/net/URL;
 
-    const-string v2, "https://raw.githubusercontent.com/swarup-developer/sweet-tts-updates/main/latest.json"
+    const-string v2, "https://raw.githubusercontent.com/swarup-developer/sweet-tts-update/main/latest.json"
 
     invoke-direct {v1, v2}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
