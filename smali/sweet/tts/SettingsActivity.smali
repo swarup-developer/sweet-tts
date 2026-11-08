@@ -2430,6 +2430,8 @@
     .line 178
     invoke-direct {v0}, Lsweet/tts/SettingsActivity;->refreshStatus()V
 
+    invoke-static {v0}, Lsweet/tts/UpdateChecker;->check(Landroid/app/Activity;)V
+
     return-void
 .end method
 

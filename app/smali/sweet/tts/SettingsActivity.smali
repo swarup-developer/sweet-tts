@@ -1935,6 +1935,14 @@
 
     invoke-virtual {v2, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
+    invoke-static {v0}, Lsweet/tts/SpeakerRoute;->makeToggle(Landroid/content/Context;)Landroid/widget/CheckBox;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/view/View;
+
+    invoke-virtual {v2, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
+
     .line 89
     invoke-direct {v0}, Lsweet/tts/SettingsActivity;->spacer()Landroid/widget/TextView;
 
@@ -1957,7 +1965,7 @@
 
     const-string v9, "\u091c\u092c \u0915\u094b\u0908 \u0938\u094d\u0915\u094d\u0930\u0940\u0928 \u0930\u0940\u0921\u0930 \u0911\u0932 \u0907\u0928 \u0935\u0928 \u0915\u093e \u0907\u0938\u094d\u0924\u0947\u092e\u093e\u0932 \u0915\u0930 \u0930\u0939\u093e \u0939\u094b, \u0924\u092c \u090f\u0915 \u091b\u094b\u091f\u0940 \u0938\u0942\u091a\u0928\u093e \u0926\u093f\u0916\u093e\u0915\u0930 \u0910\u092a \u0915\u094b \u092c\u0948\u0915\u0917\u094d\u0930\u093e\u0909\u0902\u0921 \u092e\u0947\u0902 \u091a\u093e\u0932\u0942 \u0930\u0916\u0924\u093e \u0939\u0948, \u0924\u093e\u0915\u093f \u092b\u093c\u094b\u0928 \u0909\u0938\u0947 \u092c\u0902\u0926 \u0928 \u0915\u0930\u0947\u0964 \u092c\u0948\u091f\u0930\u0940 \u0928\u0939\u0940\u0902 \u0916\u093e\u0924\u093e\u0964"
 
-    const-string v10, "Shows a quiet notification while a screen reader uses All In One, so the phone does not close it in the background"
+    const-string v10, "Shows a quiet notification while a screen reader uses Sweet TTS, so the phone does not close it in the background"
 
     const-string v11, "Keep running in background"
 
@@ -2421,6 +2429,8 @@
 
     .line 178
     invoke-direct {v0}, Lsweet/tts/SettingsActivity;->refreshStatus()V
+
+    invoke-static {v0}, Lsweet/tts/UpdateChecker;->check(Landroid/app/Activity;)V
 
     return-void
 .end method

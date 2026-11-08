@@ -91,10 +91,15 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 47
+    :try_start_elq
     sget-object p0, Lsweet/tts/EloquenceHub;->INSTANCE:Lsweet/tts/EloquenceHub;
 
     invoke-virtual {p0}, Lsweet/tts/EloquenceHub;->engine()Lorg/eloqium/tts/engine/EloqiumEngine;
+    :try_end_elq
 
+    .catchall {:try_start_elq .. :try_end_elq} :catch_elq
+
+    :catch_elq
     return-void
 .end method
 
@@ -482,6 +487,8 @@
     move-result v0
 
     invoke-interface {v9, v0, v4, v15}, Landroid/speech/tts/SynthesisCallback;->start(III)I
+
+    invoke-static {v0}, Lsweet/tts/SpeakerRoute;->noteSampleRate(I)V
 
     .line 127
     invoke-interface {v9}, Landroid/speech/tts/SynthesisCallback;->done()I
@@ -928,6 +935,8 @@
     const/4 v4, 0x1
 
     :try_start_b
+    invoke-static {v15}, Lsweet/tts/SpeakerRoute;->noteSampleRate(I)V
+
     invoke-interface {v9, v15, v0, v4}, Landroid/speech/tts/SynthesisCallback;->start(III)I
 
     move-result v15
@@ -999,7 +1008,7 @@
 
     .line 223
     :try_start_d
-    invoke-interface {v9, v3, v4, v7}, Landroid/speech/tts/SynthesisCallback;->audioAvailable([BII)I
+    invoke-static {v9, v3, v4, v7}, Lsweet/tts/EloquenceVoiceBackend;->writeAudioRouted(Landroid/speech/tts/SynthesisCallback;[BII)I
 
     move-result v5
     :try_end_d
@@ -2189,6 +2198,8 @@
 .method public stop()V
     .locals 1
 
+    invoke-static {}, Lsweet/tts/SpeakerRoute;->requestStop()V
+
     const/4 v0, 0x1
 
     .line 58
@@ -2204,4 +2215,47 @@
     iget-boolean p0, p0, Lsweet/tts/EloquenceVoiceBackend;->stopRequested:Z
 
     return p0
+.end method
+
+.method private static writeAudioRouted(Landroid/speech/tts/SynthesisCallback;[BII)I
+    .locals 6
+
+    sget-object v0, Lsweet/tts/App;->Companion:Lsweet/tts/App$Companion;
+
+    invoke-virtual {v0}, Lsweet/tts/App$Companion;->getContext()Landroid/app/Application;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lsweet/tts/SpeakerRoute;->isEnabled(Landroid/content/Context;)Z
+
+    move-result v1
+
+    if-eqz v1, :send_real
+
+    new-array v1, p3, [B
+
+    const/4 v2, 0x0
+
+    invoke-static {p1, p2, v1, v2, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    invoke-static {v0, v1}, Lsweet/tts/SpeakerRoute;->playBlocking(Landroid/content/Context;[B)Z
+
+    move-result v0
+
+    if-eqz v0, :send_real
+
+    new-array v0, p3, [B
+
+    invoke-interface {p0, v0, v2, p3}, Landroid/speech/tts/SynthesisCallback;->audioAvailable([BII)I
+
+    move-result v0
+
+    return v0
+
+    :send_real
+    invoke-interface {p0, p1, p2, p3}, Landroid/speech/tts/SynthesisCallback;->audioAvailable([BII)I
+
+    move-result v0
+
+    return v0
 .end method

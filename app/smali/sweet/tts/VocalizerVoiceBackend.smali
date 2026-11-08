@@ -177,6 +177,7 @@
     iput-object v0, p0, Lsweet/tts/VocalizerVoiceBackend;->appContext:Landroid/content/Context;
 
     .line 28
+    :try_start_vocinit
     new-instance v0, Lcom/nuance/android/vocalizer/VocalizerEngine;
 
     invoke-direct {v0, p1}, Lcom/nuance/android/vocalizer/VocalizerEngine;-><init>(Landroid/content/Context;)V
@@ -213,7 +214,16 @@
     invoke-virtual {v0}, Lsweet/tts/VocalizerAssetManager;->initialize()Z
 
     move-result p1
+    :try_end_vocinit
 
+    .catchall {:try_start_vocinit .. :try_end_vocinit} :catch_vocinit
+
+    goto :vocinit_ok
+
+    :catch_vocinit
+    const/4 p1, 0x0
+
+    :vocinit_ok
     .line 39
     const-string v0, "AllInOneTTS"
 
@@ -2814,6 +2824,8 @@
 
     move-result v3
 
+    invoke-static {p4}, Lsweet/tts/SpeakerRoute;->noteSampleRate(I)V
+
     if-nez v3, :cond_0
 
     move v3, v2
@@ -3035,56 +3047,60 @@
 .end method
 
 .method private final writeAudio(Landroid/speech/tts/SynthesisCallback;[B)Z
-    .locals 4
+    .locals 5
 
-    .line 192
+    move-object v4, p2
+
+    iget-object v0, p0, Lsweet/tts/VocalizerVoiceBackend;->appContext:Landroid/content/Context;
+
+    invoke-static {v0}, Lsweet/tts/SpeakerRoute;->isEnabled(Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-eqz v0, :send_real
+
+    iget-object v0, p0, Lsweet/tts/VocalizerVoiceBackend;->appContext:Landroid/content/Context;
+
+    invoke-static {v0, p2}, Lsweet/tts/SpeakerRoute;->playBlocking(Landroid/content/Context;[B)Z
+
+    move-result v0
+
+    if-eqz v0, :send_real
+
+    array-length v0, p2
+    new-array v4, v0, [B
+
+    :send_real
     invoke-interface {p1}, Landroid/speech/tts/SynthesisCallback;->getMaxBufferSize()I
 
-    move-result p0
+    move-result v0
 
-    const/4 v0, 0x2
+    const/4 v1, 0x2
 
-    invoke-static {p0, v0}, Lkotlin/ranges/RangesKt;->coerceAtLeast(II)I
+    invoke-static {v0, v1}, Lkotlin/ranges/RangesKt;->coerceAtLeast(II)I
 
-    move-result p0
+    move-result v0
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    move v1, v0
-
-    .line 194
-    :goto_0
-    array-length v2, p2
-
-    if-ge v1, v2, :cond_1
-
-    .line 195
-    array-length v2, p2
-
+    :loop
+    array-length v2, v4
+    if-ge v1, v2, :done
+    array-length v2, v4
     sub-int/2addr v2, v1
-
-    invoke-static {p0, v2}, Ljava/lang/Math;->min(II)I
-
+    invoke-static {v0, v2}, Ljava/lang/Math;->min(II)I
     move-result v2
-
-    .line 196
-    invoke-interface {p1, p2, v1, v2}, Landroid/speech/tts/SynthesisCallback;->audioAvailable([BII)I
-
+    invoke-interface {p1, v4, v1, v2}, Landroid/speech/tts/SynthesisCallback;->audioAvailable([BII)I
     move-result v3
-
-    if-eqz v3, :cond_0
-
+    if-eqz v3, :next
+    const/4 v0, 0x0
     return v0
-
-    :cond_0
+    :next
     add-int/2addr v1, v2
-
-    goto :goto_0
-
-    :cond_1
-    const/4 p0, 0x1
-
-    return p0
+    goto :loop
+    :done
+    const/4 v0, 0x1
+    return v0
 .end method
 
 
@@ -3257,6 +3273,8 @@
 
 .method public stop()V
     .locals 4
+
+    invoke-static {}, Lsweet/tts/SpeakerRoute;->requestStop()V
 
     const/4 v0, 0x1
 

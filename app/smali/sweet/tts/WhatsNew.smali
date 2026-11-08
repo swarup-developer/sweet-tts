@@ -150,7 +150,7 @@
     .line 38
     new-array v2, v1, [Ljava/lang/String;
 
-    const-string v9, "Get updates and the source code on GitHub: github.com/swarup-developer/sweet-tts/releases"
+    const-string v9, "Automatic update check: Sweet TTS tells you when a new version is ready and opens the download page for you."
 
     aput-object v9, v2, v3
 
@@ -204,7 +204,7 @@
     const-string v13, "OK"
 
     .line 35
-    const-string v9, "What\'s new in Sweet TTS 3.1"
+    const-string v9, "What\'s new in Sweet TTS 3.3"
 
     const-string v10, "Help language"
 
@@ -268,7 +268,7 @@
     const-string v21, "\u0920\u0940\u0915 \u0939\u0948"
 
     .line 50
-    const-string v17, "Sweet TTS 3.1 \u092e\u0947\u0902 \u0928\u092f\u093e \u0915\u094d\u092f\u093e \u0939\u0948"
+    const-string v17, "Sweet TTS 3.3 \u092e\u0947\u0902 \u0928\u092f\u093e \u0915\u094d\u092f\u093e \u0939\u0948"
 
     const-string v18, "\u092e\u0926\u0926 \u0915\u0940 \u092d\u093e\u0937\u093e (Help language)"
 
@@ -332,7 +332,7 @@
     const-string v13, "\u09a0\u09bf\u0995 \u0986\u099b\u09c7"
 
     .line 65
-    const-string v9, "Sweet TTS 3.1-\u09a4\u09c7 \u09a8\u09a4\u09c1\u09a8 \u0995\u09c0"
+    const-string v9, "Sweet TTS 3.3-\u09a4\u09c7 \u09a8\u09a4\u09c1\u09a8 \u0995\u09c0"
 
     const-string v10, "\u09b8\u09b9\u09be\u09af\u09bc\u09a4\u09be\u09b0 \u09ad\u09be\u09b7\u09be (Help language)"
 
@@ -396,7 +396,7 @@
     const-string v21, "\u0679\u06be\u06cc\u06a9 \u06c1\u06d2"
 
     .line 80
-    const-string v17, "Sweet TTS 3.1 \u0645\u06cc\u06ba \u0646\u06cc\u0627 \u06a9\u06cc\u0627 \u06c1\u06d2"
+    const-string v17, "Sweet TTS 3.3 \u0645\u06cc\u06ba \u0646\u06cc\u0627 \u06a9\u06cc\u0627 \u06c1\u06d2"
 
     const-string v18, "\u0645\u062f\u062f \u06a9\u06cc \u0632\u0628\u0627\u0646 (Help language)"
 
@@ -460,7 +460,7 @@
     const-string v13, "\u062d\u0633\u0646\u0627\u064b"
 
     .line 95
-    const-string v9, "\u0627\u0644\u062c\u062f\u064a\u062f \u0641\u064a Sweet TTS 3.1"
+    const-string v9, "\u0627\u0644\u062c\u062f\u064a\u062f \u0641\u064a Sweet TTS 3.3"
 
     const-string v10, "\u0644\u063a\u0629 \u0627\u0644\u0645\u0633\u0627\u0639\u062f\u0629 (Help language)"
 
@@ -875,13 +875,13 @@
 
     .line 188
     :goto_0
-    const-string p0, "New in Plus: IBM Eloquence and SpeechFlow can be chosen as voices (both for English, SpeechFlow for Hindi and Urdu). They are listed last in each language. Their own apps must be installed on the phone; if one is missing, the language\'s normal voice speaks. All In One\'s Dictionary and Punctuation settings are not used for them; their own settings apply."
+    const-string p0, "New in Plus: IBM Eloquence and SpeechFlow can be chosen as voices (both for English, SpeechFlow for Hindi and Urdu). They are listed last in each language. Their own apps must be installed on the phone; if one is missing, the language\'s normal voice speaks. Sweet TTS\'s Dictionary and Punctuation settings are not used for them; their own settings apply."
 
     return-object p0
 
     .line 187
     :cond_7
-    const-string p0, "\u0627\u0644\u062c\u062f\u064a\u062f \u0641\u064a Plus: \u064a\u0645\u0643\u0646 \u0627\u062e\u062a\u064a\u0627\u0631 IBM Eloquence \u0648SpeechFlow \u0643\u0623\u0635\u0648\u0627\u062a (\u0627\u0644\u0627\u062b\u0646\u0627\u0646 \u0644\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629\u060c \u0648SpeechFlow \u0644\u0644\u0647\u0646\u062f\u064a\u0629 \u0648\u0627\u0644\u0623\u0631\u062f\u064a\u0629). \u062a\u0638\u0647\u0631 \u0641\u064a \u0622\u062e\u0631 \u0642\u0627\u0626\u0645\u0629 \u0643\u0644 \u0644\u063a\u0629. \u062a\u062d\u062a\u0627\u062c \u0625\u0644\u0649 \u062a\u062b\u0628\u064a\u062a \u062a\u0637\u0628\u064a\u0642\u0627\u062a\u0647\u0627 \u0627\u0644\u062e\u0627\u0635\u0629 \u0639\u0644\u0649 \u0627\u0644\u0647\u0627\u062a\u0641\u060c \u0648\u0625\u0646 \u0644\u0645 \u062a\u0643\u0646 \u0645\u0648\u062c\u0648\u062f\u0629 \u064a\u062a\u062d\u062f\u062b \u0627\u0644\u0635\u0648\u062a \u0627\u0644\u0639\u0627\u062f\u064a \u0644\u0644\u063a\u0629. \u0644\u0627 \u062a\u064f\u0637\u0628\u064e\u0651\u0642 \u0639\u0644\u064a\u0647\u0627 \u0625\u0639\u062f\u0627\u062f\u0627\u062a Dictionary \u0648Punctuation \u0627\u0644\u062e\u0627\u0635\u0629 \u0628\u0640 All In One\u060c \u0628\u0644 \u0625\u0639\u062f\u0627\u062f\u0627\u062a\u0647\u0627 \u0647\u064a."
+    const-string p0, "\u0627\u0644\u062c\u062f\u064a\u062f \u0641\u064a Plus: \u064a\u0645\u0643\u0646 \u0627\u062e\u062a\u064a\u0627\u0631 IBM Eloquence \u0648SpeechFlow \u0643\u0623\u0635\u0648\u0627\u062a (\u0627\u0644\u0627\u062b\u0646\u0627\u0646 \u0644\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629\u060c \u0648SpeechFlow \u0644\u0644\u0647\u0646\u062f\u064a\u0629 \u0648\u0627\u0644\u0623\u0631\u062f\u064a\u0629). \u062a\u0638\u0647\u0631 \u0641\u064a \u0622\u062e\u0631 \u0642\u0627\u0626\u0645\u0629 \u0643\u0644 \u0644\u063a\u0629. \u062a\u062d\u062a\u0627\u062c \u0625\u0644\u0649 \u062a\u062b\u0628\u064a\u062a \u062a\u0637\u0628\u064a\u0642\u0627\u062a\u0647\u0627 \u0627\u0644\u062e\u0627\u0635\u0629 \u0639\u0644\u0649 \u0627\u0644\u0647\u0627\u062a\u0641\u060c \u0648\u0625\u0646 \u0644\u0645 \u062a\u0643\u0646 \u0645\u0648\u062c\u0648\u062f\u0629 \u064a\u062a\u062d\u062f\u062b \u0627\u0644\u0635\u0648\u062a \u0627\u0644\u0639\u0627\u062f\u064a \u0644\u0644\u063a\u0629. \u0644\u0627 \u062a\u064f\u0637\u0628\u064e\u0651\u0642 \u0639\u0644\u064a\u0647\u0627 \u0625\u0639\u062f\u0627\u062f\u0627\u062a Dictionary \u0648Punctuation \u0627\u0644\u062e\u0627\u0635\u0629 \u0628\u0640 Sweet TTS\u060c \u0628\u0644 \u0625\u0639\u062f\u0627\u062f\u0627\u062a\u0647\u0627 \u0647\u064a."
 
     return-object p0
 .end method

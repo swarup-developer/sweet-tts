@@ -91,10 +91,15 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 47
+    :try_start_elq
     sget-object p0, Lsweet/tts/EloquenceHub;->INSTANCE:Lsweet/tts/EloquenceHub;
 
     invoke-virtual {p0}, Lsweet/tts/EloquenceHub;->engine()Lorg/eloqium/tts/engine/EloqiumEngine;
+    :try_end_elq
 
+    .catchall {:try_start_elq .. :try_end_elq} :catch_elq
+
+    :catch_elq
     return-void
 .end method
 

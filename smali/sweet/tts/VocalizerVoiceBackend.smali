@@ -177,6 +177,7 @@
     iput-object v0, p0, Lsweet/tts/VocalizerVoiceBackend;->appContext:Landroid/content/Context;
 
     .line 28
+    :try_start_vocinit
     new-instance v0, Lcom/nuance/android/vocalizer/VocalizerEngine;
 
     invoke-direct {v0, p1}, Lcom/nuance/android/vocalizer/VocalizerEngine;-><init>(Landroid/content/Context;)V
@@ -213,7 +214,16 @@
     invoke-virtual {v0}, Lsweet/tts/VocalizerAssetManager;->initialize()Z
 
     move-result p1
+    :try_end_vocinit
 
+    .catchall {:try_start_vocinit .. :try_end_vocinit} :catch_vocinit
+
+    goto :vocinit_ok
+
+    :catch_vocinit
+    const/4 p1, 0x0
+
+    :vocinit_ok
     .line 39
     const-string v0, "AllInOneTTS"
 
