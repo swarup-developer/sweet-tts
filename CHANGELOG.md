@@ -1,5 +1,19 @@
 # Changelog
 
+## Sweet TTS 3.5 - 2026-11-08
+
+- Smaller downloads: the release now ships a universal APK plus per-ABI
+  builds (arm64-v8a, armeabi-v7a); each phone downloads only the build for
+  its processor. Native libs and voice data stay uncompressed (the engine
+  mmaps them); classes.dex is now compressed.
+- The update prompt now appears when the app opens (no need to visit
+  settings), at most once per 6 hours, and stays silent for a version you
+  dismiss with Later.
+- Update dialog reworked for TalkBack: Download and Later are now separate
+  full-width buttons stacked vertically, and What's New is one short line
+  per item.
+- Same signing key; installs as an in-place update.
+
 ## Sweet TTS 3.4 - 2026-11-08
 
 - What's New cleaned up: the original app's leftover entries (old 2.0 notes

@@ -3,7 +3,7 @@
 .source "UpdateChecker.java"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # annotations
@@ -18,24 +18,28 @@
 
 
 # instance fields
-.field final synthetic val$activity:Landroid/app/Activity;
+.field final synthetic val$dlg:Landroid/app/AlertDialog;
 
-.field final synthetic val$url:Ljava/lang/String;
+.field final synthetic val$latest:I
+
+.field final synthetic val$p:Landroid/content/SharedPreferences;
 
 
 # direct methods
-.method constructor <init>(Landroid/app/Activity;Ljava/lang/String;)V
-    .registers 3
+.method constructor <init>(Landroid/content/SharedPreferences;ILandroid/app/AlertDialog;)V
+    .registers 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 84
-    iput-object p1, p0, Lsweet/tts/UpdateChecker$4;->val$activity:Landroid/app/Activity;
+    .line 157
+    iput-object p1, p0, Lsweet/tts/UpdateChecker$4;->val$p:Landroid/content/SharedPreferences;
 
-    iput-object p2, p0, Lsweet/tts/UpdateChecker$4;->val$url:Ljava/lang/String;
+    iput p2, p0, Lsweet/tts/UpdateChecker$4;->val$latest:I
+
+    iput-object p3, p0, Lsweet/tts/UpdateChecker$4;->val$dlg:Landroid/app/AlertDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,37 +48,31 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .registers 5
+.method public onClick(Landroid/view/View;)V
+    .registers 4
 
-    .line 87
-    :try_start_0
-    iget-object p1, p0, Lsweet/tts/UpdateChecker$4;->val$activity:Landroid/app/Activity;
+    .line 159
+    iget-object p1, p0, Lsweet/tts/UpdateChecker$4;->val$p:Landroid/content/SharedPreferences;
 
-    new-instance p2, Landroid/content/Intent;
+    invoke-interface {p1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
-    const-string v0, "android.intent.action.VIEW"
+    move-result-object p1
 
-    iget-object v1, p0, Lsweet/tts/UpdateChecker$4;->val$url:Ljava/lang/String;
+    const-string v0, "update_dismissed_version"
 
-    invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+    iget v1, p0, Lsweet/tts/UpdateChecker$4;->val$latest:I
 
-    move-result-object v1
+    invoke-interface {p1, v0, v1}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
-    invoke-direct {p2, v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+    move-result-object p1
 
-    invoke-virtual {p1, p2}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
-    :try_end_12
-    .catchall {:try_start_0 .. :try_end_12} :catchall_13
+    invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 89
-    goto :goto_14
+    .line 160
+    iget-object p1, p0, Lsweet/tts/UpdateChecker$4;->val$dlg:Landroid/app/AlertDialog;
 
-    .line 88
-    :catchall_13
-    move-exception p1
+    invoke-virtual {p1}, Landroid/app/AlertDialog;->dismiss()V
 
-    .line 90
-    :goto_14
+    .line 161
     return-void
 .end method

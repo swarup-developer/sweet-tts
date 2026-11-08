@@ -150,7 +150,7 @@
     .line 38
     new-array v2, v1, [Ljava/lang/String;
 
-    const-string v9, "What\'s New is cleaned up: only Sweet TTS\'s own notes appear here now."
+    const-string v9, "Smaller download, and a clearer update prompt as soon as the app opens."
 
     aput-object v9, v2, v3
 
@@ -204,7 +204,7 @@
     const-string v13, "OK"
 
     .line 35
-    const-string v9, "What\'s new in Sweet TTS 3.4"
+    const-string v9, "What\'s new in Sweet TTS 3.5"
 
     const-string v10, "Help language"
 
@@ -218,7 +218,7 @@
     .line 53
     new-array v2, v1, [Ljava/lang/String;
 
-    const-string v8, "What\'s New \u0938\u093e\u092b\u093c \u0939\u0941\u0906: \u0905\u092c \u092f\u0939\u093e\u0901 \u0938\u093f\u0930\u094d\u092b\u093c Sweet TTS \u0915\u0947 \u0905\u092a\u0928\u0947 \u0928\u094b\u091f \u0926\u093f\u0916\u0924\u0947 \u0939\u0948\u0902\u0964"
+    const-string v8, "\u091b\u094b\u091f\u093e \u0921\u093e\u0909\u0928\u0932\u094b\u0921, \u0914\u0930 \u0910\u092a \u0916\u0941\u0932\u0924\u0947 \u0939\u0940 \u0938\u093e\u092b\u093c \u0905\u092a\u0921\u0947\u091f \u0938\u0902\u0926\u0947\u0936\u0964"
 
     aput-object v8, v2, v3
 
@@ -268,7 +268,7 @@
     const-string v21, "\u0920\u0940\u0915 \u0939\u0948"
 
     .line 50
-    const-string v17, "Sweet TTS 3.4 \u092e\u0947\u0902 \u0928\u092f\u093e \u0915\u094d\u092f\u093e \u0939\u0948"
+    const-string v17, "Sweet TTS 3.5 \u092e\u0947\u0902 \u0928\u092f\u093e \u0915\u094d\u092f\u093e \u0939\u0948"
 
     const-string v18, "\u092e\u0926\u0926 \u0915\u0940 \u092d\u093e\u0937\u093e (Help language)"
 
@@ -282,7 +282,7 @@
     .line 68
     new-array v2, v1, [Ljava/lang/String;
 
-    const-string v9, "What\'s New \u09aa\u09b0\u09bf\u09b7\u09cd\u0995\u09be\u09b0: \u098f\u0996\u09a8 \u098f\u0996\u09be\u09a8\u09c7 \u09b6\u09c1\u09a7\u09c1 Sweet TTS-\u098f\u09b0 \u09a8\u09bf\u099c\u09c7\u09b0 \u09a8\u09cb\u099f \u09a6\u09c7\u0996\u09be \u09af\u09be\u09af\u09bc\u0964"
+    const-string v9, "\u099b\u09cb\u099f \u09a1\u09be\u0989\u09a8\u09b2\u09cb\u09a1, \u0986\u09b0 \u0985\u09cd\u09af\u09be\u09aa \u0996\u09c1\u09b2\u09b2\u09c7\u0987 \u09aa\u09b0\u09bf\u09b7\u09cd\u0995\u09be\u09b0 \u0986\u09aa\u09a1\u09c7\u099f \u09ac\u09be\u09b0\u09cd\u09a4\u09be\u0964"
 
     aput-object v9, v2, v3
 
@@ -332,7 +332,7 @@
     const-string v13, "\u09a0\u09bf\u0995 \u0986\u099b\u09c7"
 
     .line 65
-    const-string v9, "Sweet TTS 3.4-\u09a4\u09c7 \u09a8\u09a4\u09c1\u09a8 \u0995\u09c0"
+    const-string v9, "Sweet TTS 3.5-\u09a4\u09c7 \u09a8\u09a4\u09c1\u09a8 \u0995\u09c0"
 
     const-string v10, "\u09b8\u09b9\u09be\u09af\u09bc\u09a4\u09be\u09b0 \u09ad\u09be\u09b7\u09be (Help language)"
 
@@ -346,7 +346,7 @@
     .line 83
     new-array v2, v1, [Ljava/lang/String;
 
-    const-string v8, "What\'s New \u0635\u0627\u0641 \u06c1\u0648 \u06af\u06cc\u0627: \u0627\u0628 \u06cc\u06c1\u0627\u06ba \u0635\u0631\u0641 Sweet TTS \u06a9\u06d2 \u0627\u067e\u0646\u06d2 \u0646\u0648\u0679 \u0646\u0638\u0631 \u0622\u062a\u06d2 \u06c1\u06cc\u06ba\u06d4"
+    const-string v8, "\u0686\u06be\u0648\u0679\u0627 \u0688\u0627\u0624\u0646 \u0644\u0648\u0688\u060c \u0627\u0648\u0631 \u0627\u06cc\u067e \u06a9\u06be\u0644\u062a\u06d2 \u06c1\u06cc \u0635\u0627\u0641 \u0627\u067e\u0688\u06cc\u0679 \u067e\u06cc\u063a\u0627\u0645\u06d4"
 
     aput-object v8, v2, v3
 
@@ -396,7 +396,7 @@
     const-string v21, "\u0679\u06be\u06cc\u06a9 \u06c1\u06d2"
 
     .line 80
-    const-string v17, "Sweet TTS 3.4 \u0645\u06cc\u06ba \u0646\u06cc\u0627 \u06a9\u06cc\u0627 \u06c1\u06d2"
+    const-string v17, "Sweet TTS 3.5 \u0645\u06cc\u06ba \u0646\u06cc\u0627 \u06a9\u06cc\u0627 \u06c1\u06d2"
 
     const-string v18, "\u0645\u062f\u062f \u06a9\u06cc \u0632\u0628\u0627\u0646 (Help language)"
 
@@ -410,7 +410,7 @@
     .line 98
     new-array v1, v1, [Ljava/lang/String;
 
-    const-string v2, "\u062a\u0645 \u062a\u0646\u0638\u064a\u0641 What\'s New: \u0644\u0627 \u062a\u0638\u0647\u0631 \u0647\u0646\u0627 \u0627\u0644\u0622\u0646 \u0633\u0648\u0649 \u0645\u0644\u0627\u062d\u0638\u0627\u062a Sweet TTS \u0627\u0644\u062e\u0627\u0635\u0629."
+    const-string v2, "\u062a\u0646\u0632\u064a\u0644 \u0623\u0635\u063a\u0631\u060c \u0648\u0631\u0633\u0627\u0644\u0629 \u062a\u062d\u062f\u064a\u062b \u0623\u0648\u0636\u062d \u0641\u0648\u0631 \u0641\u062a\u062d \u0627\u0644\u062a\u0637\u0628\u064a\u0642."
 
     aput-object v2, v1, v3
 
@@ -460,7 +460,7 @@
     const-string v13, "\u062d\u0633\u0646\u0627\u064b"
 
     .line 95
-    const-string v9, "\u0627\u0644\u062c\u062f\u064a\u062f \u0641\u064a Sweet TTS 3.4"
+    const-string v9, "\u0627\u0644\u062c\u062f\u064a\u062f \u0641\u064a Sweet TTS 3.5"
 
     const-string v10, "\u0644\u063a\u0629 \u0627\u0644\u0645\u0633\u0627\u0639\u062f\u0629 (Help language)"
 

@@ -14,9 +14,9 @@
 
 .field public static final PLUS:Z = false
 
-.field public static final VERSION_CODE:I = 0x7d
+.field public static final VERSION_CODE:I = 0x7e
 
-.field public static final VERSION_NAME:Ljava/lang/String; = "3.4"
+.field public static final VERSION_NAME:Ljava/lang/String; = "3.5"
 
 
 # direct methods
