@@ -1,5 +1,22 @@
 # Changelog
 
+## Sweet TTS 3.2 - 2026-11-08
+
+- New experimental setting: "Phone speaker for speech" (Other Settings).
+  When ON, Sweet TTS plays its own speech through the phone speaker while
+  music/media keeps playing on Bluetooth or wired headphones - automatic,
+  no manual switching. When OFF, behavior is unchanged (default).
+  Technical note: a TTS engine cannot reroute the screen reader's own
+  playback (TalkBack plays the PCM, not the engine), so the engine plays
+  the speech itself on the built-in speaker (accessibility volume stream)
+  and hands the caller silence of identical duration, keeping TalkBack's
+  timing and interruption behavior intact. Covers the built-in Vocalizer
+  and Eloquence voices. Implemented via new smali/sweet/tts/SpeakerRoute.
+- Removed the remaining "All In One" name strings from the UI
+  (background notification description, What's New history, Arabic help).
+- What's New entry retitled to 3.2.
+- versionCode 123.
+
 ## Sweet TTS 3.1 (update 2) - 2026-11-08
 
 - Removed the old app name everywhere: every UI string, resource, translated
