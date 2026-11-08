@@ -2,6 +2,14 @@
 
 ## Sweet TTS 3.2 - 2026-11-08
 
+- Hardening for the Android 10/11 instant crash: the Vocalizer engine's
+  native library load and initialisation are now guarded - if the native
+  engine fails to load on a device, the TTS service still starts and the
+  other voices (Eloquence, Google/external) keep working instead of the
+  whole engine crashing at bind time. Same guard on Eloquence engine init.
+  NOTE: root cause could not be reproduced in our environment (no emulator
+  capable of booting); this is defensive hardening pending on-device test.
+
 - New experimental setting: "Phone speaker for speech" (Other Settings).
   When ON, Sweet TTS plays its own speech through the phone speaker while
   music/media keeps playing on Bluetooth or wired headphones - automatic,
