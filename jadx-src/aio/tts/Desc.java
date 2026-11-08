@@ -37,7 +37,7 @@ public final class Desc {
     public static final String LOGGING = "ऐप की गतिविधि का छोटा रिकॉर्ड रखता है, गड़बड़ी जाँचने के लिए।";
     public static final String LOG_CLEAR = "लॉग मिटाता है।";
     public static final String LOG_OPEN = "लॉग खोलकर दिखाता है।";
-    public static final String LOG_SAVE = "लॉग की कॉपी फोन के Documents फोल्डर में, All In One TTS नाम के फोल्डर में रखता है।";
+    public static final String LOG_SAVE = "लॉग की कॉपी फोन के Documents फोल्डर में, Sweet TTS नाम के फोल्डर में रखता है।";
     public static final String LOG_SHARE = "लॉग की फाइल दूसरी ऐप में भेजता है।";
     public static final String LONG_NUMBER = "बड़ी संख्या कैसे पढ़ी जाए। None: जैसी है वैसी। Ones, Tens, Hundreds: संख्या को दाएँ से 1, 2 या 3 अंकों के टुकड़ों में बाँटकर हर टुकड़ा संख्या की तरह पढ़ेगा, जैसे 'दो सौ चौंतीस'। Group of 2, 3, 4, 5: टुकड़ों में बाँटकर हर अंक अलग-अलग पढ़ेगा, टुकड़ों के बीच रुककर, जैसे '2 3 4'। उदाहरण: 1234567890 को Hundreds में पढ़ने पर '1, 234, 567, 890' के हर टुकड़े संख्या की तरह पढ़े जाएँगे। Group of 3 में '1, 2 3 4, 5 6 7, 8 9 0' के हर अंक अलग पढ़े जाएँगे।";
     public static final String LONG_NUMBER_APPLIES = "ऊपर की सेटिंग कितने अंकों से लगे। 8 चुनने पर सिर्फ 8 या ज़्यादा अंकों की संख्या पर लगेगी, छोटी संख्या सामान्य पढ़ी जाएगी। 4 अंक अक्सर साल होते हैं, इसलिए चुनाव 5 से शुरू होता है।";
@@ -48,7 +48,7 @@ public final class Desc {
     public static final String OTP = "संदेश में OTP मिले तो उसे अंक-अंक करके रुक-रुककर पढ़ेगा। OTP पढ़ने के बाद 40 सेकंड तक आप फोन को शेक करेंगे, तो हर शेक पर वह OTP फिर से सुनाएगा। नया OTP आते ही 40 सेकंड फिर से शुरू हो जाते हैं।";
     public static final String OTP_AFTER = "OTP आने के कितने सेकंड बाद clipboard में कॉपी हो। देर रखने से 'Copied' की घोषणा संदेश पढ़ते समय बीच में नहीं आती।";
     public static final String OTP_CLIPBOARD = "चुने हुए सेकंड के बाद OTP अपने आप clipboard में कॉपी हो जाएगा, ताकि आप उसे OTP भरने की जगह पर आराम से paste कर सकें।";
-    public static final String PERAPP_ADD_NOPERM = "पहली बार Usage Access की अनुमति देनी होगी, ताकि ऐप जान सके कि स्क्रीन पर कौन सी ऐप खुली है। यह अनुमति App info की Permissions सूची में नहीं आती। यह फोन की Settings में Special app access के अंदर Usage access में मिलती है। अगर वहाँ स्विच ऑन न हो और फोन restricted setting का संदेश दिखाए, तो Settings में Apps में All In One TTS खोलकर App info में जाइए। ऊपर दाएँ कोने में More options (तीन बिंदु) दबाकर Allow restricted settings चुनिए, फिर अनुमति दोबारा दीजिए।";
+    public static final String PERAPP_ADD_NOPERM = "पहली बार Usage Access की अनुमति देनी होगी, ताकि ऐप जान सके कि स्क्रीन पर कौन सी ऐप खुली है। यह अनुमति App info की Permissions सूची में नहीं आती। यह फोन की Settings में Special app access के अंदर Usage access में मिलती है। अगर वहाँ स्विच ऑन न हो और फोन restricted setting का संदेश दिखाए, तो Settings में Apps में Sweet TTS खोलकर App info में जाइए। ऊपर दाएँ कोने में More options (तीन बिंदु) दबाकर Allow restricted settings चुनिए, फिर अनुमति दोबारा दीजिए।";
     public static final String PERAPP_ADD_NOPERM_EN = "First tap: grant Usage Access permission (needed to tell which app is on screen)";
     public static final String PERAPP_ADD_OK = "जिस ऐप के लिए अलग आवाज़ चाहिए, उसे जोड़िए। जोड़ी हुई ऐप को हटाने के लिए उसके नाम को देर तक दबाइए (long press)।";
     public static final String PERAPP_PICK = "जिस ऐप के लिए अलग आवाज़ चाहिए, उसे चुनिए।";

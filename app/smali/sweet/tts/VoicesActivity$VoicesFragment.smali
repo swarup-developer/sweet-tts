@@ -786,7 +786,7 @@
     invoke-virtual {p1, p2}, Landroidx/preference/Preference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 66
-    const-string p2, "Speak something through All In One TTS once first, then come back here."
+    const-string p2, "Speak something through Sweet TTS once first, then come back here."
 
     check-cast p2, Ljava/lang/CharSequence;
 

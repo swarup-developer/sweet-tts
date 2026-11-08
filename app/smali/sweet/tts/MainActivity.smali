@@ -526,7 +526,7 @@
     invoke-direct {p1, v0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 101
-    const-string v0, "This will clear all of All In One TTS\'s own settings, dictionary entries, and logs, and restart the app fresh. This cannot be undone."
+    const-string v0, "This will clear all of Sweet TTS\'s own settings, dictionary entries, and logs, and restart the app fresh. This cannot be undone."
 
     check-cast v0, Ljava/lang/CharSequence;
 
@@ -915,7 +915,7 @@
 
     move-result v0
 
-    const-string v1, "All In One TTS Plus"
+    const-string v1, "Sweet TTS Plus"
 
     if-eqz v0, :cond_0
 
@@ -926,7 +926,7 @@
     goto :goto_0
 
     :cond_0
-    const-string v0, "All In One TTS"
+    const-string v0, "Sweet TTS"
 
     check-cast v0, Ljava/lang/CharSequence;
 

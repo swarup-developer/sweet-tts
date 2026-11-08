@@ -38,7 +38,7 @@
 
 
 # static fields
-.field private static final FOLDER:Ljava/lang/String; = "All In One TTS"
+.field private static final FOLDER:Ljava/lang/String; = "Sweet TTS"
 
 .field public static final INSTANCE:Lsweet/tts/DocumentsSaver;
 
@@ -70,7 +70,7 @@
 .method public final saveCopy(Landroid/content/Context;Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
     .locals 7
 
-    const-string p0, "Documents/All In One TTS/"
+    const-string p0, "Documents/Sweet TTS/"
 
     const-string v0, "context"
 
@@ -137,7 +137,7 @@
 
     move-result-object v3
 
-    const-string v4, "/All In One TTS"
+    const-string v4, "/Sweet TTS"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

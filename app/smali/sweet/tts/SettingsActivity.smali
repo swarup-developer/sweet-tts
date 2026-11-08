@@ -190,7 +190,7 @@
     if-nez p0, :cond_1
 
     .line 198
-    const-string p0, "More voices, step 2 of 3. Create the folder All In One TTS Voices in internal storage."
+    const-string p0, "More voices, step 2 of 3. Create the folder Sweet TTS Voices in internal storage."
 
     return-object p0
 
@@ -303,7 +303,7 @@
     :goto_1
     new-instance v0, Ljava/lang/StringBuilder;
 
-    const-string v1, "More voices, step 3 of 3. The folder All In One TTS Voices is ready"
+    const-string v1, "More voices, step 3 of 3. The folder Sweet TTS Voices is ready"
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -757,7 +757,7 @@
 
     if-eqz v0, :cond_1
 
-    const-string v0, "Folder All In One TTS Voices created in internal storage. Copy the voice files into it."
+    const-string v0, "Folder Sweet TTS Voices created in internal storage. Copy the voice files into it."
 
     goto :goto_0
 
@@ -947,7 +947,7 @@
     goto :goto_0
 
     :cond_0
-    const-string v0, "No extra voices found in All In One TTS Voices."
+    const-string v0, "No extra voices found in Sweet TTS Voices."
 
     :goto_0
     if-eqz p1, :cond_1
@@ -2267,7 +2267,7 @@
     move-result-object v8
 
     .line 151
-    const-string v9, "\u0932\u0949\u0917 \u0915\u0940 \u0915\u0949\u092a\u0940 \u092b\u094b\u0928 \u0915\u0947 Documents \u092b\u094b\u0932\u094d\u0921\u0930 \u092e\u0947\u0902, All In One TTS \u0928\u093e\u092e \u0915\u0947 \u092b\u094b\u0932\u094d\u0921\u0930 \u092e\u0947\u0902 \u0930\u0916\u0924\u093e \u0939\u0948\u0964"
+    const-string v9, "\u0932\u0949\u0917 \u0915\u0940 \u0915\u0949\u092a\u0940 \u092b\u094b\u0928 \u0915\u0947 Documents \u092b\u094b\u0932\u094d\u0921\u0930 \u092e\u0947\u0902, Sweet TTS \u0928\u093e\u092e \u0915\u0947 \u092b\u094b\u0932\u094d\u0921\u0930 \u092e\u0947\u0902 \u0930\u0916\u0924\u093e \u0939\u0948\u0964"
 
     move/from16 v16, v6
 

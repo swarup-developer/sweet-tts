@@ -1,8 +1,8 @@
-# Sweet TTS (recovered from All In One TTS 3.1)
+# Sweet TTS (recovered from the released 3.1 APK)
 
 Sweet TTS is an Android text-to-speech engine app. This source tree was recovered
-from the release APK "All In One TTS V 3.1.APK" after the original source code was
-lost, and renamed to Sweet TTS (applicationId `sweet.tts`).
+from the released 3.1 APK after the original source code was lost (applicationId
+`sweet.tts`).
 
 ## What the app is
 
@@ -39,4 +39,4 @@ Needs Java 11+ and apktool 2.12.1:
 
 Sign with the Sweet TTS release keystore (kept outside git). The original
 `aio.tts` signing key is lost, so this app uses the new package id `sweet.tts`
-and a new key; it installs alongside the old All In One TTS build.
+and a new key.

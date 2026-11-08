@@ -345,7 +345,7 @@ public final class SettingsActivity extends Activity {
             return "More voices, step 1 of 3. Allow access to files. Opens an Android page: turn on All files access for this app, then come back.";
         }
         if (!VoiceFolder.INSTANCE.exists()) {
-            return "More voices, step 2 of 3. Create the folder All In One TTS Voices in internal storage.";
+            return "More voices, step 2 of 3. Create the folder Sweet TTS Voices in internal storage.";
         }
         int size = ExternalVoices.INSTANCE.getExtraNames().size();
         if (size > 0) {
@@ -353,7 +353,7 @@ public final class SettingsActivity extends Activity {
         } else {
             str = ".";
         }
-        return "More voices, step 3 of 3. The folder All In One TTS Voices is ready" + str + " Copy voice files (a .dat and a .hdr for each voice) into it, then press here to check the folder.";
+        return "More voices, step 3 of 3. The folder Sweet TTS Voices is ready" + str + " Copy voice files (a .dat and a .hdr for each voice) into it, then press here to check the folder.";
     }
 
     private final void refreshMoreVoices() {
@@ -370,7 +370,7 @@ public final class SettingsActivity extends Activity {
         if (!VoiceFolder.INSTANCE.hasAccess()) {
             VoiceFolder.INSTANCE.askAccess(this);
         } else if (!VoiceFolder.INSTANCE.exists()) {
-            Toast.makeText(this, VoiceFolder.INSTANCE.create() ? "Folder All In One TTS Voices created in internal storage. Copy the voice files into it." : "The folder could not be created.", 1).show();
+            Toast.makeText(this, VoiceFolder.INSTANCE.create() ? "Folder Sweet TTS Voices created in internal storage. Copy the voice files into it." : "The folder could not be created.", 1).show();
             refreshMoreVoices();
         } else {
             Toast.makeText(this, "Checking the folder...", 0).show();
@@ -403,7 +403,7 @@ public final class SettingsActivity extends Activity {
 
     static final void onMoreVoices$lambda$33$lambda$32(SettingsActivity settingsActivity, String str) {
         int size = ExternalVoices.INSTANCE.getExtraNames().size();
-        Toast.makeText(settingsActivity, (size > 0 ? size + " extra voice(s) found: " + CollectionsKt.joinToString$default(ExternalVoices.INSTANCE.getExtraNames(), ", ", null, null, 0, null, null, 62, null) + "." : "No extra voices found in All In One TTS Voices.") + (str != null ? " " + str : ""), 1).show();
+        Toast.makeText(settingsActivity, (size > 0 ? size + " extra voice(s) found: " + CollectionsKt.joinToString$default(ExternalVoices.INSTANCE.getExtraNames(), ", ", null, null, 0, null, null, 62, null) + "." : "No extra voices found in Sweet TTS Voices.") + (str != null ? " " + str : ""), 1).show();
         settingsActivity.refreshMoreVoices();
     }
 

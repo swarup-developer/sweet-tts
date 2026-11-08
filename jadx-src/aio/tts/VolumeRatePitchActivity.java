@@ -137,7 +137,7 @@ public final class VolumeRatePitchActivity extends AppCompatActivity {
             if (VoiceCatalog.INSTANCE.getVoices().isEmpty()) {
                 Preference preference = new Preference(contextRequireContext);
                 preference.setTitle("Voice list not loaded yet");
-                preference.setSummary("Speak something through All In One TTS once first, then come back here.");
+                preference.setSummary("Speak something through Sweet TTS once first, then come back here.");
                 preference.setSelectable(false);
                 preferenceScreenCreatePreferenceScreen.addPreference(preference);
             } else if (arrayList2.isEmpty()) {

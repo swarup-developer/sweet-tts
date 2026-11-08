@@ -37,7 +37,7 @@ public final class ImportExport {
     }
 
     public final File folder$app() {
-        File file = new File(App.INSTANCE.getContext().getExternalFilesDir(null), "All In One TTS");
+        File file = new File(App.INSTANCE.getContext().getExternalFilesDir(null), "Sweet TTS");
         if (!file.exists()) {
             file.mkdirs();
         }

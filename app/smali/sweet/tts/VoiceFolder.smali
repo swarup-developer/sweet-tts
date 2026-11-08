@@ -42,7 +42,7 @@
 # static fields
 .field public static final INSTANCE:Lsweet/tts/VoiceFolder;
 
-.field public static final NAME:Ljava/lang/String; = "All In One TTS Voices"
+.field public static final NAME:Ljava/lang/String; = "Sweet TTS Voices"
 
 .field public static final REQUEST_CODE:I = 0x1131
 
@@ -212,7 +212,7 @@
 
     move-result-object v0
 
-    const-string v1, "All In One TTS Voices"
+    const-string v1, "Sweet TTS Voices"
 
     invoke-direct {p0, v0, v1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 

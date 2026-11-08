@@ -65,7 +65,7 @@
 # static fields
 .field public static final INSTANCE:Lsweet/tts/PlaySample;
 
-.field public static final TEST_TEXT:Ljava/lang/String; = "This is a test message of All In One TTS."
+.field public static final TEST_TEXT:Ljava/lang/String; = "This is a test message of Sweet TTS."
 
 .field private static final TEST_TEXT_BY_LANG:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
@@ -180,7 +180,7 @@
     .line 38
     const-string v1, "ar"
 
-    const-string v2, "\u0647\u0630\u0647 \u0631\u0633\u0627\u0644\u0629 \u0627\u062e\u062a\u0628\u0627\u0631 \u0645\u0646 All In One TTS."
+    const-string v2, "\u0647\u0630\u0647 \u0631\u0633\u0627\u0644\u0629 \u0627\u062e\u062a\u0628\u0627\u0631 \u0645\u0646 Sweet TTS."
 
     invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
@@ -284,7 +284,7 @@
     .line 46
     const-string v1, "sa"
 
-    const-string v2, "\u0907\u092f\u092e\u094d All In One TTS \u0907\u0924\u094d\u092f\u0938\u094d\u092f \u092a\u0930\u0940\u0915\u094d\u0937\u093e\u0938\u0928\u094d\u0926\u0947\u0936\u0903 \u0905\u0938\u094d\u0924\u093f\u0964"
+    const-string v2, "\u0907\u092f\u092e\u094d Sweet TTS \u0907\u0924\u094d\u092f\u0938\u094d\u092f \u092a\u0930\u0940\u0915\u094d\u0937\u093e\u0938\u0928\u094d\u0926\u0947\u0936\u0903 \u0905\u0938\u094d\u0924\u093f\u0964"
 
     invoke-static {v1, v2}, Lkotlin/TuplesKt;->to(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
 
@@ -796,7 +796,7 @@
 
     if-nez p0, :cond_0
 
-    const-string p0, "This is a test message of All In One TTS."
+    const-string p0, "This is a test message of Sweet TTS."
 
     :cond_0
     return-object p0

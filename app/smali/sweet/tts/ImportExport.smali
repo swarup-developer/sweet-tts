@@ -468,7 +468,7 @@
 
     move-result-object v0
 
-    const-string v1, "All In One TTS"
+    const-string v1, "Sweet TTS"
 
     invoke-direct {p0, v0, v1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 

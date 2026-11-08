@@ -168,7 +168,7 @@
     move-result-object v0
 
     .line 53
-    const-string v2, "All In One TTS is running"
+    const-string v2, "Sweet TTS is running"
 
     check-cast v2, Ljava/lang/CharSequence;
 

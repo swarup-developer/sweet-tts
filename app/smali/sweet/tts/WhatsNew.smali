@@ -150,7 +150,7 @@
     .line 38
     new-array v2, v1, [Ljava/lang/String;
 
-    const-string v9, "New Eloquence settings: 6 voices and Natural voice."
+    const-string v9, "Get updates and the source code on GitHub: github.com/swarup-developer/sweet-tts/releases"
 
     aput-object v9, v2, v3
 
@@ -204,7 +204,7 @@
     const-string v13, "OK"
 
     .line 35
-    const-string v9, "What\'s new in All In One TTS 3.0"
+    const-string v9, "What\'s new in Sweet TTS 3.1"
 
     const-string v10, "Help language"
 
@@ -218,7 +218,7 @@
     .line 53
     new-array v2, v1, [Ljava/lang/String;
 
-    const-string v8, "Eloquence \u0915\u0940 \u0928\u0908 \u0938\u0947\u091f\u093f\u0902\u0917: 6 \u0906\u0935\u093e\u091c\u093c\u0947\u0902 \u0914\u0930 Natural voice\u0964"
+    const-string v8, "\u0905\u092a\u0921\u0947\u091f \u0914\u0930 \u0938\u094b\u0930\u094d\u0938 \u0915\u094b\u0921 GitHub \u092a\u0930: github.com/swarup-developer/sweet-tts/releases"
 
     aput-object v8, v2, v3
 
@@ -268,7 +268,7 @@
     const-string v21, "\u0920\u0940\u0915 \u0939\u0948"
 
     .line 50
-    const-string v17, "\u0911\u0932 \u0907\u0928 \u0935\u0928 TTS 3.0 \u092e\u0947\u0902 \u0928\u092f\u093e \u0915\u094d\u092f\u093e \u0939\u0948"
+    const-string v17, "Sweet TTS 3.1 \u092e\u0947\u0902 \u0928\u092f\u093e \u0915\u094d\u092f\u093e \u0939\u0948"
 
     const-string v18, "\u092e\u0926\u0926 \u0915\u0940 \u092d\u093e\u0937\u093e (Help language)"
 
@@ -282,7 +282,7 @@
     .line 68
     new-array v2, v1, [Ljava/lang/String;
 
-    const-string v9, "Eloquence-\u098f\u09b0 \u09a8\u09a4\u09c1\u09a8 \u09b8\u09c7\u099f\u09bf\u0982: 6\u099f\u09bf \u09ad\u09af\u09bc\u09c7\u09b8 \u0993 Natural voice\u0964"
+    const-string v9, "\u0986\u09aa\u09a1\u09c7\u099f \u0993 \u09b8\u09cb\u09b0\u09cd\u09b8 \u0995\u09cb\u09a1 GitHub-\u098f: github.com/swarup-developer/sweet-tts/releases"
 
     aput-object v9, v2, v3
 
@@ -332,7 +332,7 @@
     const-string v13, "\u09a0\u09bf\u0995 \u0986\u099b\u09c7"
 
     .line 65
-    const-string v9, "\u0985\u09b2 \u0987\u09a8 \u0993\u09af\u09bc\u09be\u09a8 TTS 3.0-\u09a4\u09c7 \u09a8\u09a4\u09c1\u09a8 \u0995\u09c0"
+    const-string v9, "Sweet TTS 3.1-\u09a4\u09c7 \u09a8\u09a4\u09c1\u09a8 \u0995\u09c0"
 
     const-string v10, "\u09b8\u09b9\u09be\u09af\u09bc\u09a4\u09be\u09b0 \u09ad\u09be\u09b7\u09be (Help language)"
 
@@ -346,7 +346,7 @@
     .line 83
     new-array v2, v1, [Ljava/lang/String;
 
-    const-string v8, "Eloquence \u06a9\u06cc \u0646\u0626\u06cc \u0633\u06cc\u0679\u0646\u06af: 6 \u0622\u0648\u0627\u0632\u06cc\u06ba \u0627\u0648\u0631 Natural voice\u06d4"
+    const-string v8, "\u0627\u067e\u0688\u06cc\u0679\u0633 \u0627\u0648\u0631 \u0633\u0648\u0631\u0633 \u06a9\u0648\u0688 GitHub \u067e\u0631: github.com/swarup-developer/sweet-tts/releases"
 
     aput-object v8, v2, v3
 
@@ -396,7 +396,7 @@
     const-string v21, "\u0679\u06be\u06cc\u06a9 \u06c1\u06d2"
 
     .line 80
-    const-string v17, "\u0622\u0644 \u0627\u0650\u0646 \u0648\u0646 TTS 3.0 \u0645\u06cc\u06ba \u0646\u06cc\u0627 \u06a9\u06cc\u0627 \u06c1\u06d2"
+    const-string v17, "Sweet TTS 3.1 \u0645\u06cc\u06ba \u0646\u06cc\u0627 \u06a9\u06cc\u0627 \u06c1\u06d2"
 
     const-string v18, "\u0645\u062f\u062f \u06a9\u06cc \u0632\u0628\u0627\u0646 (Help language)"
 
@@ -410,7 +410,7 @@
     .line 98
     new-array v1, v1, [Ljava/lang/String;
 
-    const-string v2, "\u0625\u0639\u062f\u0627\u062f\u0627\u062a \u062c\u062f\u064a\u062f\u0629 \u0644\u0640 Eloquence: 6 \u0623\u0635\u0648\u0627\u062a \u0648 Natural voice."
+    const-string v2, "\u0627\u0644\u062a\u062d\u062f\u064a\u062b\u0627\u062a \u0648\u0627\u0644\u0643\u0648\u062f \u0627\u0644\u0645\u0635\u062f\u0631\u064a \u0639\u0644\u0649 GitHub: github.com/swarup-developer/sweet-tts/releases"
 
     aput-object v2, v1, v3
 
@@ -460,7 +460,7 @@
     const-string v13, "\u062d\u0633\u0646\u0627\u064b"
 
     .line 95
-    const-string v9, "\u0627\u0644\u062c\u062f\u064a\u062f \u0641\u064a All In One TTS 3.0"
+    const-string v9, "\u0627\u0644\u062c\u062f\u064a\u062f \u0641\u064a Sweet TTS 3.1"
 
     const-string v10, "\u0644\u063a\u0629 \u0627\u0644\u0645\u0633\u0627\u0639\u062f\u0629 (Help language)"
 
@@ -519,7 +519,7 @@
     const-string v21, "OK"
 
     .line 112
-    const-string v17, "What\'s new in All In One TTS 2.0"
+    const-string v17, "What\'s new in Sweet TTS 2.0"
 
     const-string v18, "Help language"
 
@@ -755,7 +755,7 @@
     const-string v21, "\u062d\u0633\u0646\u0627\u064b"
 
     .line 168
-    const-string v17, "\u0627\u0644\u062c\u062f\u064a\u062f \u0641\u064a All In One TTS 2.0"
+    const-string v17, "\u0627\u0644\u062c\u062f\u064a\u062f \u0641\u064a Sweet TTS 2.0"
 
     const-string v18, "\u0644\u063a\u0629 \u0627\u0644\u0645\u0633\u0627\u0639\u062f\u0629 (Help language)"
 

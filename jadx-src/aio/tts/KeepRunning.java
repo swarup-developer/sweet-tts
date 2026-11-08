@@ -56,7 +56,7 @@ public final class KeepRunning {
             notificationChannel.setShowBadge(false);
             notificationChannel.setSound(null, null);
             notificationManager.createNotificationChannel(notificationChannel);
-            Notification notificationBuild = new Notification.Builder(s, CHANNEL).setSmallIcon(android.R.drawable.ic_lock_silent_mode_off).setContentTitle("All In One TTS is running").setContentText("Keeps speech ready in the background").setContentIntent(PendingIntent.getActivity(s, 0, new Intent(s, (Class<?>) MainActivity.class), AccessibilityEventCompat.TYPE_VIEW_TARGETED_BY_SCROLL)).setOngoing(true).setShowWhen(false).build();
+            Notification notificationBuild = new Notification.Builder(s, CHANNEL).setSmallIcon(android.R.drawable.ic_lock_silent_mode_off).setContentTitle("Sweet TTS is running").setContentText("Keeps speech ready in the background").setContentIntent(PendingIntent.getActivity(s, 0, new Intent(s, (Class<?>) MainActivity.class), AccessibilityEventCompat.TYPE_VIEW_TARGETED_BY_SCROLL)).setOngoing(true).setShowWhen(false).build();
             Intrinsics.checkNotNullExpressionValue(notificationBuild, "build(...)");
             s.startForeground(ID, notificationBuild, 2);
             log("on (foreground service with notification)");

@@ -16,7 +16,7 @@ import kotlin.jvm.internal.Intrinsics;
 /* loaded from: classes.dex */
 public final class VoiceFolder {
     public static final VoiceFolder INSTANCE = new VoiceFolder();
-    public static final String NAME = "All In One TTS Voices";
+    public static final String NAME = "Sweet TTS Voices";
     public static final int REQUEST_CODE = 4401;
 
     private VoiceFolder() {

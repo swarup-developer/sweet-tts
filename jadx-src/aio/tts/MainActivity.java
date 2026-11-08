@@ -38,9 +38,9 @@ public final class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setTitle(Edition.INSTANCE.getPLUS() ? "All In One TTS Plus" : "All In One TTS");
+        setTitle(Edition.INSTANCE.getPLUS() ? "Sweet TTS Plus" : "Sweet TTS");
         if (Edition.INSTANCE.getPLUS()) {
-            ((TextView) findViewById(R.id.appTitle)).setText("All In One TTS Plus");
+            ((TextView) findViewById(R.id.appTitle)).setText("Sweet TTS Plus");
         }
         final Context applicationContext = getApplicationContext();
         new Thread(new Runnable() { // from class: aio.tts.MainActivity$$ExternalSyntheticLambda9
@@ -129,7 +129,7 @@ public final class MainActivity extends Activity {
             @Override // android.view.View.OnClickListener
             public final void onClick(View view) {
                 MainActivity mainActivity = this.f$0;
-                new AlertDialog.Builder(mainActivity).setMessage("This will clear all of All In One TTS's own settings, dictionary entries, and logs, and restart the app fresh. This cannot be undone.").setPositiveButton("Clear", new DialogInterface.OnClickListener() { // from class: aio.tts.MainActivity$$ExternalSyntheticLambda8
+                new AlertDialog.Builder(mainActivity).setMessage("This will clear all of Sweet TTS's own settings, dictionary entries, and logs, and restart the app fresh. This cannot be undone.").setPositiveButton("Clear", new DialogInterface.OnClickListener() { // from class: aio.tts.MainActivity$$ExternalSyntheticLambda8
                     @Override // android.content.DialogInterface.OnClickListener
                     public final void onClick(DialogInterface dialogInterface, int i) {
                         MainActivity.onCreate$lambda$15$lambda$14(mainActivity, dialogInterface, i);
