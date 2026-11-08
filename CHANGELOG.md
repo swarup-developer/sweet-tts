@@ -1,5 +1,16 @@
 # Changelog
 
+## Sweet TTS 3.3 - 2026-11-08
+
+- Automatic update check: when Sweet TTS opens its settings it checks for a
+  newer release and shows an "update available" prompt with the What's New
+  text and a Download button that opens the release page in the browser.
+  TalkBack-friendly: standard labelled dialog (title, message, Download and
+  Later buttons). Tapping Later silences the prompt for that version only.
+  Includes the 3.2 crash hardening and the Phone speaker for speech toggle.
+- Adds the INTERNET permission (used only for the update check).
+- Carries the same signing key, so it installs as an in-place update.
+
 ## Sweet TTS 3.2 - 2026-11-08
 
 - Hardening for the Android 10/11 instant crash: the Vocalizer engine's
