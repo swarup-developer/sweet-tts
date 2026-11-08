@@ -9,15 +9,13 @@ sdkInfo:
 packageInfo:
   forcedPackageId: 127
 versionInfo:
-  versionCode: 128
-  versionName: '3.7'
+  versionCode: 129
+  versionName: '3.8'
 doNotCompress:
 - arsc
 - dex
 - jet
 - png
-- so
-- xmf
 - META-INF/androidx.activity_activity-ktx.version
 - META-INF/androidx.activity_activity.version
 - META-INF/androidx.annotation_annotation-experimental.version

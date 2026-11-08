@@ -20,8 +20,6 @@
 # instance fields
 .field final synthetic val$activity:Landroid/app/Activity;
 
-.field final synthetic val$fapi:Ljava/lang/String;
-
 .field final synthetic val$furl:Ljava/lang/String;
 
 .field final synthetic val$latest:I
@@ -34,15 +32,15 @@
 
 
 # direct methods
-.method constructor <init>(Landroid/app/Activity;Landroid/content/SharedPreferences;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .registers 8
+.method constructor <init>(Landroid/app/Activity;Landroid/content/SharedPreferences;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .registers 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 112
+    .line 105
     iput-object p1, p0, Lsweet/tts/UpdateChecker$2;->val$activity:Landroid/app/Activity;
 
     iput-object p2, p0, Lsweet/tts/UpdateChecker$2;->val$p:Landroid/content/SharedPreferences;
@@ -55,8 +53,6 @@
 
     iput-object p6, p0, Lsweet/tts/UpdateChecker$2;->val$furl:Ljava/lang/String;
 
-    iput-object p7, p0, Lsweet/tts/UpdateChecker$2;->val$fapi:Ljava/lang/String;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -65,9 +61,9 @@
 
 # virtual methods
 .method public run()V
-    .registers 8
+    .registers 7
 
-    .line 114
+    .line 107
     iget-object v0, p0, Lsweet/tts/UpdateChecker$2;->val$activity:Landroid/app/Activity;
 
     iget-object v1, p0, Lsweet/tts/UpdateChecker$2;->val$p:Landroid/content/SharedPreferences;
@@ -80,11 +76,8 @@
 
     iget-object v5, p0, Lsweet/tts/UpdateChecker$2;->val$furl:Ljava/lang/String;
 
-    iget-object v6, p0, Lsweet/tts/UpdateChecker$2;->val$fapi:Ljava/lang/String;
+    invoke-static/range {v0 .. v5}, Lsweet/tts/UpdateChecker;->-$$Nest$smshowDialog(Landroid/app/Activity;Landroid/content/SharedPreferences;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    # invokes: Lsweet/tts/UpdateChecker;->showDialog(Landroid/app/Activity;Landroid/content/SharedPreferences;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    invoke-static/range {v0 .. v6}, Lsweet/tts/UpdateChecker;->access$100(Landroid/app/Activity;Landroid/content/SharedPreferences;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 115
+    .line 108
     return-void
 .end method

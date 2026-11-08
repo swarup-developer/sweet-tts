@@ -29,7 +29,7 @@
     </queries>
     <permission android:name="sweet.tts.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
     <uses-permission android:name="sweet.tts.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
-    <application android:allowBackup="false" android:allowNativeHeapPointerTagging="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:label="Sweet TTS" android:memtagMode="off" android:name="sweet.tts.App" android:requestLegacyExternalStorage="true" android:theme="@style/AppTheme">
+    <application android:allowBackup="false" android:allowNativeHeapPointerTagging="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:label="Sweet TTS" android:memtagMode="off" android:name="sweet.tts.App" android:requestLegacyExternalStorage="true" android:theme="@style/AppTheme">
         <activity android:exported="true" android:label="Sweet TTS" android:name="sweet.tts.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

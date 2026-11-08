@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lsweet/tts/UpdateChecker;->startDownload(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
+    value = Lsweet/tts/UpdateChecker;->startDownload(Landroid/app/Activity;Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,30 +20,26 @@
 # instance fields
 .field final synthetic val$activity:Landroid/app/Activity;
 
-.field final synthetic val$apiUrl:Ljava/lang/String;
-
-.field final synthetic val$pageUrl:Ljava/lang/String;
-
 .field final synthetic val$pd:Landroid/app/ProgressDialog;
+
+.field final synthetic val$url:Ljava/lang/String;
 
 
 # direct methods
-.method constructor <init>(Landroid/app/Activity;Ljava/lang/String;Landroid/app/ProgressDialog;Ljava/lang/String;)V
-    .registers 5
+.method constructor <init>(Landroid/app/Activity;Ljava/lang/String;Landroid/app/ProgressDialog;)V
+    .registers 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()V"
         }
     .end annotation
 
-    .line 196
+    .line 179
     iput-object p1, p0, Lsweet/tts/UpdateChecker$5;->val$activity:Landroid/app/Activity;
 
-    iput-object p2, p0, Lsweet/tts/UpdateChecker$5;->val$apiUrl:Ljava/lang/String;
+    iput-object p2, p0, Lsweet/tts/UpdateChecker$5;->val$url:Ljava/lang/String;
 
     iput-object p3, p0, Lsweet/tts/UpdateChecker$5;->val$pd:Landroid/app/ProgressDialog;
-
-    iput-object p4, p0, Lsweet/tts/UpdateChecker$5;->val$pageUrl:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,10 +51,10 @@
 .method public run()V
     .registers 21
 
-    .line 198
+    .line 181
     move-object/from16 v8, p0
 
-    .line 200
+    .line 183
     const/4 v1, 0x0
 
     :try_start_3
@@ -74,13 +70,13 @@
 
     invoke-direct {v9, v0, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
     :try_end_10
-    .catchall {:try_start_3 .. :try_end_10} :catchall_c3
+    .catchall {:try_start_3 .. :try_end_10} :catchall_b9
 
-    .line 201
+    .line 184
     :try_start_10
     new-instance v0, Ljava/net/URL;
 
-    iget-object v1, v8, Lsweet/tts/UpdateChecker$5;->val$apiUrl:Ljava/lang/String;
+    iget-object v1, v8, Lsweet/tts/UpdateChecker$5;->val$url:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
@@ -90,100 +86,91 @@
 
     check-cast v0, Ljava/net/HttpURLConnection;
 
-    .line 202
+    .line 185
     const/16 v1, 0x3a98
 
     invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
 
-    .line 203
+    .line 186
     const/16 v1, 0x7530
 
     invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setReadTimeout(I)V
 
-    .line 204
-    const-string v1, "Authorization"
+    .line 187
+    const/4 v1, 0x1
 
-    const-string v2, "token "
+    invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setInstanceFollowRedirects(Z)V
 
-    invoke-virtual {v0, v1, v2}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 205
-    const-string v1, "Accept"
-
-    const-string v2, "application/octet-stream"
-
-    invoke-virtual {v0, v1, v2}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 206
+    .line 188
     const-string v1, "User-Agent"
 
     const-string v2, "SweetTTS-UpdateCheck"
 
     invoke-virtual {v0, v1, v2}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 207
+    .line 189
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
     move-result v1
 
-    .line 208
+    .line 190
     const/16 v2, 0xc8
 
-    if-ne v1, v2, :cond_a4
+    if-ne v1, v2, :cond_9a
 
-    .line 212
+    .line 194
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getContentLength()I
 
     move-result v1
 
     int-to-long v10, v1
 
-    .line 213
+    .line 195
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
 
     move-result-object v12
 
-    .line 214
+    .line 196
     new-instance v13, Ljava/io/FileOutputStream;
 
     invoke-direct {v13, v9}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
-    .line 215
+    .line 197
     const/high16 v1, 0x10000
 
     new-array v14, v1, [B
 
-    .line 216
+    .line 198
     const-wide/16 v15, 0x0
 
     move-wide v1, v15
 
-    .line 218
-    :goto_59
+    .line 200
+    :goto_4f
     invoke-virtual {v12, v14}, Ljava/io/InputStream;->read([B)I
 
     move-result v3
 
     const/4 v4, -0x1
 
-    if-eq v3, v4, :cond_8f
+    if-eq v3, v4, :cond_85
 
-    .line 219
+    .line 201
     const/4 v4, 0x0
 
     invoke-virtual {v13, v14, v4, v3}, Ljava/io/FileOutputStream;->write([BII)V
 
-    .line 220
+    .line 202
     int-to-long v3, v3
 
     add-long v17, v1, v3
 
-    .line 221
+    .line 203
     cmp-long v1, v10, v15
 
-    if-lez v1, :cond_8a
+    if-lez v1, :cond_80
 
-    .line 222
+    .line 204
     const-wide/16 v1, 0x64
 
     mul-long v1, v1, v17
@@ -192,15 +179,15 @@
 
     long-to-int v3, v1
 
-    .line 223
+    .line 205
     const-wide/32 v1, 0x100000
 
     div-long v4, v17, v1
 
-    .line 224
+    .line 206
     div-long v6, v10, v1
 
-    .line 225
+    .line 207
     iget-object v2, v8, Lsweet/tts/UpdateChecker$5;->val$activity:Landroid/app/Activity;
 
     new-instance v1, Lsweet/tts/UpdateChecker$5$1;
@@ -217,31 +204,31 @@
 
     invoke-virtual {v15, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 231
+    .line 213
     nop
 
-    .line 218
-    :cond_8a
+    .line 200
+    :cond_80
     move-wide/from16 v1, v17
 
     const-wide/16 v15, 0x0
 
-    goto :goto_59
+    goto :goto_4f
 
-    .line 233
-    :cond_8f
+    .line 215
+    :cond_85
     invoke-virtual {v13}, Ljava/io/FileOutputStream;->close()V
 
-    .line 234
+    .line 216
     invoke-virtual {v12}, Ljava/io/InputStream;->close()V
 
-    .line 235
+    .line 217
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->disconnect()V
 
-    .line 236
+    .line 218
     nop
 
-    .line 237
+    .line 219
     iget-object v0, v8, Lsweet/tts/UpdateChecker$5;->val$activity:Landroid/app/Activity;
 
     new-instance v1, Lsweet/tts/UpdateChecker$5$2;
@@ -250,14 +237,14 @@
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 254
-    goto :goto_d3
+    .line 236
+    goto :goto_c9
 
-    .line 209
-    :cond_a4
+    .line 191
+    :cond_9a
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->disconnect()V
 
-    .line 210
+    .line 192
     new-instance v0, Ljava/lang/Exception;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -281,28 +268,28 @@
     invoke-direct {v0, v1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
     throw v0
-    :try_end_c0
-    .catchall {:try_start_10 .. :try_end_c0} :catchall_c0
+    :try_end_b6
+    .catchall {:try_start_10 .. :try_end_b6} :catchall_b6
 
-    .line 243
-    :catchall_c0
+    .line 225
+    :catchall_b6
     move-exception v0
 
     move-object v1, v9
 
-    goto :goto_c4
+    goto :goto_ba
 
-    :catchall_c3
+    :catchall_b9
     move-exception v0
 
-    .line 244
-    :goto_c4
-    if-eqz v1, :cond_c9
+    .line 226
+    :goto_ba
+    if-eqz v1, :cond_bf
 
     invoke-virtual {v1}, Ljava/io/File;->delete()Z
 
-    .line 245
-    :cond_c9
+    .line 227
+    :cond_bf
     iget-object v0, v8, Lsweet/tts/UpdateChecker$5;->val$activity:Landroid/app/Activity;
 
     new-instance v1, Lsweet/tts/UpdateChecker$5$3;
@@ -311,7 +298,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
-    .line 255
-    :goto_d3
+    .line 237
+    :goto_c9
     return-void
 .end method

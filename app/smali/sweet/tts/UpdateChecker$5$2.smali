@@ -32,7 +32,7 @@
         }
     .end annotation
 
-    .line 237
+    .line 219
     iput-object p1, p0, Lsweet/tts/UpdateChecker$5$2;->this$0:Lsweet/tts/UpdateChecker$5;
 
     iput-object p2, p0, Lsweet/tts/UpdateChecker$5$2;->val$f:Ljava/io/File;
@@ -47,23 +47,31 @@
 .method public run()V
     .registers 3
 
-    .line 239
+    .line 221
+    :try_start_0
     iget-object v0, p0, Lsweet/tts/UpdateChecker$5$2;->this$0:Lsweet/tts/UpdateChecker$5;
 
     iget-object v0, v0, Lsweet/tts/UpdateChecker$5;->val$pd:Landroid/app/ProgressDialog;
 
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
+    :try_end_7
+    .catchall {:try_start_0 .. :try_end_7} :catchall_8
 
-    .line 240
+    goto :goto_9
+
+    :catchall_8
+    move-exception v0
+
+    .line 222
+    :goto_9
     iget-object v0, p0, Lsweet/tts/UpdateChecker$5$2;->this$0:Lsweet/tts/UpdateChecker$5;
 
     iget-object v0, v0, Lsweet/tts/UpdateChecker$5;->val$activity:Landroid/app/Activity;
 
     iget-object v1, p0, Lsweet/tts/UpdateChecker$5$2;->val$f:Ljava/io/File;
 
-    # invokes: Lsweet/tts/UpdateChecker;->installApk(Landroid/app/Activity;Ljava/io/File;)V
-    invoke-static {v0, v1}, Lsweet/tts/UpdateChecker;->access$300(Landroid/app/Activity;Ljava/io/File;)V
+    invoke-static {v0, v1}, Lsweet/tts/UpdateChecker;->-$$Nest$sminstallApk(Landroid/app/Activity;Ljava/io/File;)V
 
-    .line 241
+    .line 223
     return-void
 .end method

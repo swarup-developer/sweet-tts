@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lsweet/tts/UpdateChecker;->showDialog(Landroid/app/Activity;Landroid/content/SharedPreferences;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    value = Lsweet/tts/UpdateChecker;->showDialog(Landroid/app/Activity;Landroid/content/SharedPreferences;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -34,7 +34,7 @@
         }
     .end annotation
 
-    .line 176
+    .line 160
     iput-object p1, p0, Lsweet/tts/UpdateChecker$4;->val$p:Landroid/content/SharedPreferences;
 
     iput p2, p0, Lsweet/tts/UpdateChecker$4;->val$latest:I
@@ -51,7 +51,7 @@
 .method public onClick(Landroid/view/View;)V
     .registers 4
 
-    .line 178
+    .line 162
     iget-object p1, p0, Lsweet/tts/UpdateChecker$4;->val$p:Landroid/content/SharedPreferences;
 
     invoke-interface {p1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
@@ -68,11 +68,11 @@
 
     invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 179
+    .line 163
     iget-object p1, p0, Lsweet/tts/UpdateChecker$4;->val$dlg:Landroid/app/AlertDialog;
 
     invoke-virtual {p1}, Landroid/app/AlertDialog;->dismiss()V
 
-    .line 180
+    .line 164
     return-void
 .end method

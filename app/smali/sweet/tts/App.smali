@@ -1211,6 +1211,7 @@
     invoke-super {p0}, Landroid/app/Application;->onCreate()V
 
     invoke-static {p0}, Lsweet/tts/UpdateChecker;->register(Landroid/app/Application;)V
+    invoke-static {p0}, Lsweet/tts/VoiceDownloader;->register(Landroid/app/Application;)V
 
     .line 18
     move-object v1, p0

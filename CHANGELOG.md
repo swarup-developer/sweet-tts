@@ -93,6 +93,15 @@
 - All features, voices, native libraries and resources preserved as shipped.
 - Rebuilt and re-signed with a new Sweet TTS release keystore.
 
+## 3.8 (build 129)
+
+- The APK is now about 9 MB (was 76 MB). Voice data moved out of the app
+  and downloads once on first open, from the voices-v1 release.
+- Updates no longer need a token or sign-in: the repository is now public
+  and downloads happen inside the app over plain HTTPS.
+- arm64 only from this version on; no more armeabi-v7a builds.
+- Native libraries now install compressed (smaller download).
+
 ## 3.7 (build 128)
 
 - Updates are now fully automatic: the app downloads the new version itself (with a progress dialog) and the package installer opens by itself. No browser step anymore.

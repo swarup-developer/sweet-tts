@@ -32,7 +32,7 @@
         }
     .end annotation
 
-    .line 58
+    .line 56
     iput-object p1, p0, Lsweet/tts/UpdateChecker$1;->val$activity:Landroid/app/Activity;
 
     iput-object p2, p0, Lsweet/tts/UpdateChecker$1;->val$p:Landroid/content/SharedPreferences;
@@ -47,14 +47,13 @@
 .method public run()V
     .registers 3
 
-    .line 60
+    .line 58
     iget-object v0, p0, Lsweet/tts/UpdateChecker$1;->val$activity:Landroid/app/Activity;
 
     iget-object v1, p0, Lsweet/tts/UpdateChecker$1;->val$p:Landroid/content/SharedPreferences;
 
-    # invokes: Lsweet/tts/UpdateChecker;->runCheck(Landroid/app/Activity;Landroid/content/SharedPreferences;)V
-    invoke-static {v0, v1}, Lsweet/tts/UpdateChecker;->access$000(Landroid/app/Activity;Landroid/content/SharedPreferences;)V
+    invoke-static {v0, v1}, Lsweet/tts/UpdateChecker;->-$$Nest$smrunCheck(Landroid/app/Activity;Landroid/content/SharedPreferences;)V
 
-    .line 61
+    .line 59
     return-void
 .end method

@@ -25,7 +25,7 @@
 .method constructor <init>(Lsweet/tts/UpdateChecker$5;)V
     .registers 2
 
-    .line 245
+    .line 227
     iput-object p1, p0, Lsweet/tts/UpdateChecker$5$3;->this$0:Lsweet/tts/UpdateChecker$5;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,15 +38,24 @@
 .method public run()V
     .registers 5
 
-    .line 247
+    .line 229
+    :try_start_0
     iget-object v0, p0, Lsweet/tts/UpdateChecker$5$3;->this$0:Lsweet/tts/UpdateChecker$5;
 
     iget-object v0, v0, Lsweet/tts/UpdateChecker$5;->val$pd:Landroid/app/ProgressDialog;
 
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
+    :try_end_7
+    .catchall {:try_start_0 .. :try_end_7} :catchall_8
 
-    .line 249
-    :try_start_7
+    goto :goto_9
+
+    :catchall_8
+    move-exception v0
+
+    .line 231
+    :goto_9
+    :try_start_9
     iget-object v0, p0, Lsweet/tts/UpdateChecker$5$3;->this$0:Lsweet/tts/UpdateChecker$5;
 
     iget-object v0, v0, Lsweet/tts/UpdateChecker$5;->val$activity:Landroid/app/Activity;
@@ -57,7 +66,7 @@
 
     iget-object v3, p0, Lsweet/tts/UpdateChecker$5$3;->this$0:Lsweet/tts/UpdateChecker$5;
 
-    iget-object v3, v3, Lsweet/tts/UpdateChecker$5;->val$pageUrl:Ljava/lang/String;
+    iget-object v3, v3, Lsweet/tts/UpdateChecker$5;->val$url:Ljava/lang/String;
 
     invoke-static {v3}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -66,17 +75,17 @@
     invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
-    :try_end_1d
-    .catchall {:try_start_7 .. :try_end_1d} :catchall_1e
+    :try_end_1f
+    .catchall {:try_start_9 .. :try_end_1f} :catchall_20
 
-    .line 251
-    goto :goto_1f
+    .line 233
+    goto :goto_21
 
-    .line 250
-    :catchall_1e
+    .line 232
+    :catchall_20
     move-exception v0
 
-    .line 252
-    :goto_1f
+    .line 234
+    :goto_21
     return-void
 .end method
