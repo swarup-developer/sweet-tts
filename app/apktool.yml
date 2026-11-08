@@ -9,8 +9,8 @@ sdkInfo:
 packageInfo:
   forcedPackageId: 127
 versionInfo:
-  versionCode: 127
-  versionName: '3.6'
+  versionCode: 128
+  versionName: '3.7'
 doNotCompress:
 - arsc
 - dex

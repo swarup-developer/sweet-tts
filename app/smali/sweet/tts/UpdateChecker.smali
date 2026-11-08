@@ -18,7 +18,7 @@
 
 .field private static final PREFS:Ljava/lang/String; = "aiotts_settings"
 
-.field private static final UPDATE_TOKEN:Ljava/lang/String; = ""
+.field private static final UPDATE_TOKEN:Ljava/lang/String; = "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"
 
 .field private static volatile sCheckedThisProcess:Z
 

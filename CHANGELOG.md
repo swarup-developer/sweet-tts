@@ -92,3 +92,15 @@
   registers system-wide as a TTS engine).
 - All features, voices, native libraries and resources preserved as shipped.
 - Rebuilt and re-signed with a new Sweet TTS release keystore.
+
+## 3.7 (build 128)
+
+- Updates are now fully automatic: the app downloads the new version itself (with a progress dialog) and the package installer opens by itself. No browser step anymore.
+- Uses a read-only GitHub token (Contents: Read-only on this repo only) baked into the app for update downloads.
+- Installs in place: settings are kept.
+
+## 3.6 (build 127)
+
+- In-app updater added: update check when the app opens (at most once every 6 hours), What's New dialog with vertical Download and Later buttons, per-ABI download URLs.
+- Downloads still used the browser in this version; 3.7 removes that.
+- Fixed install failure on Android 10 and 11: APKs are now page-aligned (zipalign -p) so updates install in place.
