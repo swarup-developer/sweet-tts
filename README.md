@@ -1,42 +1,55 @@
-# Sweet TTS (recovered from the released 3.1 APK)
+# Sweet TTS
 
-Sweet TTS is an Android text-to-speech engine app. This source tree was recovered
-from the released 3.1 APK after the original source code was lost (applicationId
-`sweet.tts`).
+A text-to-speech engine for Android, built for blind and low-vision users.
+It continues the All In One TTS project under a new name, with the same
+voices and features, plus fixes and improvements.
 
-## What the app is
+## Features
 
-A full Android TTS engine (declares `android.intent.action.TTS_SERVICE`, so it can be
-selected system-wide as the speech engine, e.g. by TalkBack) that bundles:
+- Nuance Vocalizer voices for Indian and international languages, built in
+- IBM Eloquence and SpeechFlow as optional voices (their own apps required)
+- Works with TalkBack and other screen readers as a system TTS engine
+- Phone speaker for speech: keep spoken feedback on the phone speaker
+  while music plays on Bluetooth (Other Settings)
+- Custom dictionary and punctuation level settings
+- Automatic update checks with an in-app updater: downloads inside the app
+  and opens the installer by itself
+- App and What's New available in English, Hindi, Bengali, Urdu, Arabic
 
-- **Nuance Vocalizer Embedded** voices (`assets/vocalizer/*.xmf`, `libNuanceVocalizer.so`)
-- **Eloquence** (`org.eloqium.tts.engine`, `libeloqiumjni.so`)
-- **Google TTS** and other installed engines as external/backup voices
-- Emoji dictionaries for many languages (`assets/emoji/*.json`) and language-id
-  models (`assets/lid/*.bin`) for automatic language switching
+## Requirements
 
-Features (from the recovered code): per-app voice rules, volume/rate/pitch control,
-per-voice parameter sliders, user dictionary with import/export, number
-pronunciation settings, stress-test activity, diagnostic logging.
+- Android 10 or newer
+- arm64-v8a or armeabi-v7a device
 
-## Layout
+## Install
 
-- `app/` - apktool project (AndroidManifest.xml, smali, res, assets, lib, original).
-  This is the buildable source.
-- `jadx-src/` - jadx decompiled Java view of the same code, for reading/editing
-  reference. Classes under `aio/tts/` here are the app's code (renamed to
-  `sweet/tts/` in `app/smali/`); `com/nuance/...` and `org/eloqium/...` are the
-  native engine bindings and must keep their package names (the .so JNI exports
-  bind to them).
-- `CHANGELOG.md` - recovery log.
+1. Open the [latest release](../../releases/latest).
+2. Download the build for your phone:
+   - `Sweet.TTS.<version>.arm64.apk` - most phones
+   - `Sweet.TTS.<version>.armv7.apk` - older 32-bit phones
+   - `Sweet.TTS.<version>.apk` - universal, works everywhere
+3. Open the downloaded file and allow installation from your browser or
+   file manager when Android asks.
+4. In Android settings, choose Sweet TTS as your text-to-speech engine.
 
-## Rebuilding
+Updates install in place; settings are kept.
 
-Needs Java 11+ and apktool 2.12.1:
+## Updates
 
-    java -jar apktool.jar b app -o sweet-tts-unsigned.apk
-    # then zipalign + sign with apksigner (uber-apk-signer works)
+The app checks for new releases when it opens (at most once every 6 hours).
+When an update is available it shows a prompt with the What's New notes and
+a Download button.
 
-Sign with the Sweet TTS release keystore (kept outside git). The original
-`aio.tts` signing key is lost, so this app uses the new package id `sweet.tts`
-and a new key.
+## Privacy and licensing
+
+This repository is private because the bundled Nuance Vocalizer and IBM
+Eloquence voices are commercial components that cannot be redistributed
+publicly. The update metadata repository
+([sweet-tts-update](https://github.com/swarup-developer/sweet-tts-update))
+is public and contains only version metadata, never the app itself.
+
+## Building
+
+The app is maintained as a decompiled project (apktool). See CHANGELOG.md
+for the release history. Release APKs are built with zipalign page
+alignment (`zipalign -p`) and signed with the project keystore.
