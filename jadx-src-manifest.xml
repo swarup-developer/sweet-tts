@@ -45,7 +45,7 @@
     <uses-permission android:name="aio.tts.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
     <application
         android:theme="@style/AppTheme"
-        android:label="All In One TTS"
+        android:label="Sweet TTS"
         android:name="aio.tts.App"
         android:allowBackup="false"
         android:extractNativeLibs="false"
@@ -54,7 +54,7 @@
         android:allowNativeHeapPointerTagging="false"
         android:memtagMode="off">
         <activity
-            android:label="All In One TTS"
+            android:label="Sweet TTS"
             android:name="aio.tts.MainActivity"
             android:exported="true">
             <intent-filter>
@@ -142,7 +142,7 @@
             </intent-filter>
         </receiver>
         <service
-            android:label="All In One TTS"
+            android:label="Sweet TTS"
             android:name="aio.tts.Tts"
             android:permission="android.permission.BIND_TEXT_TO_SPEECH"
             android:exported="true"
